@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Phonesta</title>
+<link rel="stylesheet" href="./Phonesta_files/main.css"><link rel="stylesheet" href="./Phonesta_files/sanju.css"></head>
+
+<body>
+    <header>
+        <img id="logo" src="./Phonesta_files/phonesta_logo.png" alt="PHONESTA">
+        <div id="search">
+            <input type="text" placeholder="Search" maxlength="100">
+        </div>
+        <button type="submit" id="login" name="login">LOGIN</button>
+        <nav>
+            <ul id="menu">
+                <li>BRANDS</li>
+                <li>EMI</li>
+                <li>TRACK ORDERS</li>
+                <li>CONTACT</li>
+                <li>CART</li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
+        <ul class="slideshow">
+                <li><img src="./Phonesta_files/slider_1.jpeg" alt="One plus"></li>
+                <li><img src="./Phonesta_files/slider_2.jpeg" alt="Samsung"></li>
+                <li><img src="./Phonesta_files/slider_3.jpeg" alt="xiaomi"></li>
+                <li><img src="./Phonesta_files/slider_4.jpeg" alt="Realme"></li>
+        </ul>  
+        
+        <div id="offer_banner">
+            <img src="./Phonesta_files/slider_1.jpeg" alt="One plus">
+        </div>
+        <div id="top_models"></div>
+        <div id="phone_accessories"></div>
+        <div id="audio_accessories"></div>
+
+    </main>
+    <footer>
+        <section id="phonesta">
+            <a href="http://127.0.0.1:5500/index.html#">About us</a>
+            <a href="http://127.0.0.1:5500/index.html#">Sell with us</a>
+            <a href="http://127.0.0.1:5500/index.html#">Terms of Use</a>
+            <a href="http://127.0.0.1:5500/index.html#">Privacy Policy</a>
+            <a href="http://127.0.0.1:5500/index.html#">SiteMap</a>
+        </section>
+        <section id="user_account">
+            <a href="http://127.0.0.1:5500/index.html#">My Account</a>
+            <a href="http://127.0.0.1:5500/index.html#">My Orders</a>
+            <a href="http://127.0.0.1:5500/index.html#">My Shopping bag</a>
+            <a href="http://127.0.0.1:5500/index.html#">My Wishlist</a>
+        </section>
+        <section id="customer_services">
+            <a href="http://127.0.0.1:5500/index.html#">Frequently asked questions</a>
+            <a href="http://127.0.0.1:5500/index.html#">Cancellation</a>
+            <a href="http://127.0.0.1:5500/index.html#">Returns &amp; Refunds</a>
+            <a href="http://127.0.0.1:5500/index.html#">EMI Plans</a>
+            <a href="http://127.0.0.1:5500/index.html#">Offers and Promotions</a>
+            <a href="http://127.0.0.1:5500/index.html#">Contact us</a>
+        </section>
+        <section id="subscribe">
+            <form method="GET">
+                <input type="email" name="email" id="email">
+                <button type="submit" id="submit">Subscribe</button>
+            </form>
+        </section>
+        <p id="copyright">©Phonesta | All Right reserved</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+ 
+</body></html>

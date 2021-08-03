@@ -1,0 +1,145 @@
+/* Home layout : */
+body {
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header"
+                         "nav"
+                         "slider"
+                         "offer"
+                         "models"
+                         "accessories"
+                         "audio"
+                         "footer";
+    grid-template-columns: 100vw;
+}
+header{
+    grid-area: header;
+    height: 15vh;
+}
+nav {
+    grid-area: nav;
+    height: 10vh;
+}
+
+.slideshow {
+    grid-area: slider;
+    width : 100vw;
+    height: 100vh;
+}
+#offer_banner {
+    grid-area: offer;
+    object-fit: contain;
+}
+#top_models {
+    grid-area: models;
+}
+#models_caption {
+    width: 100vw;
+    padding: 10px;
+    font-size: 4em;
+    font-weight: bolder;
+    color: #1f2833;
+    text-shadow: 2px 2px #f0f0f0;
+    text-align: center;
+}
+#phone_accessories{
+    grid-area: accessories;
+}
+#audio_accessories{
+    grid-area: audio;
+}
+footer {
+    grid-area: footer;
+}
+
+/* Slide show */
+ul {
+    width : 100%;
+    list-style-type: none;
+  }
+.slideshow img, #offer_banner img {
+    width : 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+@keyframes img1 {
+    0%   { opacity: 1; }
+    25%  { opacity: 0; }
+    50%  { opacity: 0; }
+    75%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes img2 {
+    0%   { opacity: 0; }
+    25%  { opacity: 1; }
+    50%  { opacity: 0; }
+    75%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+@keyframes img3 {
+    0%   { opacity: 0; }
+    25%  { opacity: 0; }
+    50%  { opacity: 1; }
+    75%  { opacity: 0; }
+    100% { opacity: 0; } 
+}
+
+@keyframes img4 {
+    0%   { opacity: 0; }
+    25%  { opacity: 0; }
+    50%  { opacity: 0; }
+    75%  { opacity: 1; }
+    100% { opacity: 0; }
+
+}
+
+.slideshow li {
+    position: absolute;
+    top: 25vh;
+    left: 0;
+    margin-top: 1em;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+}
+
+.slideshow li:nth-child(1) {
+  animation-name: img1;
+}
+
+.slideshow li:nth-child(2) {
+  animation-name: img2;
+}
+
+.slideshow li:nth-child(3) {
+  animation-name: img3;
+}
+
+.slideshow li:nth-child(4) {
+  animation-name: img4;
+}
+
+#top_models, #phone_accessories, #audio_accessories {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+
+#top_models img {
+    width: 25vw;
+}
+
+
+@media (max-width:768px) {
+    #top_models img {
+        width: 50vw;
+    }
+    .slideshow li {
+        top: 50vh;
+    }
+
+}
