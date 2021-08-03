@@ -1,0 +1,76 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;   
+}
+
+ nav, body, footer {
+    outline: 1px solid black;
+}
+
+header{
+    background-color: #240b36;
+    color: #f0f0f0;
+    display: grid;
+    grid-template-areas: "sec1 sec2 sec3"
+                         "nav nav nav";
+    grid-template-columns: 30% 35% 35%;
+}
+
+#logo {
+    grid-area: sec1;
+    padding: 2%;
+    height: 10%;
+}
+#search {
+    grid-area: sec2;
+    height: 10%;
+    padding: 2%;
+    justify-self: end;
+}
+#login {
+    grid-area: sec3;
+    height: 10%;
+    width: fit-content;
+    padding: 2%;
+    justify-self: end;
+}
+nav {
+    grid-area: nav;
+}
+
+#menu {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: #240b36;
+    color: aliceblue;
+    display: grid;
+    grid-template-areas: "sec1 sec2 sec3 sec4"
+                         "foot . . .";
+    grid-template-columns: 20% 20% 20% 40%;
+}
+
+#phoesta {
+    grid-area: sec1;
+}
+#user_account {
+    grid-area: sec1;
+}
+#customer_service {
+    grid-area: sec1;
+}
+#subscribe {
+    grid-area: sec4;
+}
+footer section a {
+    color: aliceblue;
+    display: flex;
+    align-items: center
+}
+#copyright {
+    grid-column: 1/5;
+    justify-self: center;
+}
