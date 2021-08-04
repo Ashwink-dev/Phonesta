@@ -1,11 +1,12 @@
 /* Home layout : */
-body {
+#grid {
     margin: 0;
     display: grid;
     grid-template-areas: "header"
                          "nav"
                          "slider"
                          "offer"
+                         "brands"
                          "models"
                          "accessories"
                          "audio"
@@ -30,10 +31,13 @@ nav {
     grid-area: offer;
     object-fit: contain;
 }
+#brands {
+    grid-area: brands;
+}
 #top_models {
     grid-area: models;
 }
-#models_caption {
+#caption {
     width: 100vw;
     padding: 10px;
     font-size: 4em;
@@ -142,4 +146,48 @@ ul {
         top: 50vh;
     }
 
+}
+
+/* EMI Page */
+  #emi {
+    margin: 0 auto;
+    width: 80vw;
+    display: grid;
+    grid-template-areas: "info info"
+                         "list table";
+    grid-template-columns: 30% 100%;
+
+  }
+  #emi table {
+    grid-area: table;
+    border: 1px solid grey;
+  }
+
+  #emi filter {
+      grid-area: list;
+  }
+
+ td, th{
+    border-bottom: 0.5px solid lightgrey;
+    border-right: 0.5px solid lightgrey;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  
+caption {
+      font-weight: bolder;
+      font-size: 1em;
+      padding: 1em 0;
+  }
+  
+#emi p {
+      grid-area: info;
+      font-size: 1em;
+  }
+
+#emi #filter {
+    width: 100%;
+    outline: 1px solid blue;
+    display: flex;
+    flex-direction: row;
 }
