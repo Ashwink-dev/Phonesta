@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Phonesta_Displaypage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img id="logo" src="Logo/phonesta_logo.png" alt="PHONESTA">
+            <div id="search">
+                <input type="text" placeholder="Search" maxlength="100">
+            </div>
+            <button type="submit" id="login" name="login">LOGIN</button>
+        </header>
+        <nav>
+            <ul id="menu">
+                <li>BRANDS</li>
+                <li><a href="emi.html">EMI</a></li>
+                <li>TRACK ORDERS</li>
+                <li>CONTACT</li>
+                <li>CART</li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="Header_TotalProducts">
+                <div id="Header_Txt">
+                    <h2>Mobile Electronics</h2>
+                </div>
+            </div>
+
+            <div class="HeaderFilter">
+                <div class="dropdown">
+                    <button class="dropbtn">Sort by :Popularity  <i class="arrow down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Price Low to High</a>
+                        <a href="#">Price High to Low</a>
+                        <a href="#">Discounts</a>
+                        <a href="#">New Arrivals</a>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div class="Filtercolumn" style="background-color:#ececec;">
+
+                    <h3 class="Filter">Filters</h3>
+                    <div id="div1" class="slidecontainer">
+                        <p>PRICE</p>
+                        <input type="range" min="1" max="100" value="50" class="rangeslider">
+                    </div>
+                    <div id="price">
+                        <div class="minprice">
+                            <select name="Min" id="Min">
+                                <option value="min">MIN</option>
+                                <option value="2000"><span>&#8377;</span> 2000</option>
+                                <option value="4000"><span>&#8377;</span> 4000</option>
+                                <option value="6000"><span>&#8377;</span> 6000</option>
+                                <option value="8000"><span>&#8377;</span> 8000</option>
+                                <option value="10000"><span>&#8377;</span> 10000</option>
+                                <option value="13000"><span>&#8377;</span> 13000</option>
+                                <option value="20000"><span>&#8377;</span> 20000</option>
+                                <option value="30000"><span>&#8377;</span> 30000</option>
+                                <option value="50000"><span>&#8377;</span> 50000</option>
+                              </select>&nbsp;&nbsp;&nbsp;
+                            <span class="to">to</span>
+                        </div>
+
+                        <div class="maxprice">
+                            <select name="Max" id="Max">
+                                <option value="max">MAX</option>
+                                <option value="2000"><span>&#8377;</span> 2000</option>
+                                <option value="4000"><span>&#8377;</span> 4000</option>
+                                <option value="6000"><span>&#8377;</span> 6000</option>
+                                <option value="8000"><span>&#8377;</span> 8000</option>
+                                <option value="10000"><span>&#8377;</span> 10000</option>
+                                <option value="13000"><span>&#8377;</span> 13000</option>
+                                <option value="20000"><span>&#8377;</span> 20000</option>
+                                <option value="30000"><span>&#8377;</span> 30000</option>
+                                <option value="50000"><span>&#8377;</span> 50000</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="RAM">
+                        <div id="accordion">
+                            <h3>
+                                <label for='product-44-44' id="RAMlabel">
+                            
+                                    RAM
+                                </label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+                                        <input type="checkbox" name="content1" value="content1" id="content1">
+                                        6 GB & Above
+                                    </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                                        <input type="checkbox" name="content2" value="content2" id="content2">
+                                        4 GB
+                                    </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                                        <input type="checkbox" name="content3" value="content3" id="content3">
+                                        2 GB
+                                    </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                                        <input type="checkbox" name="content4" value="content4" id="content4">
+                                        1 GB
+                                    </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                                        <input type="checkbox" name="content5" value="content5" id="content5">
+                                       512 MB - 1GB
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!--   BRANDS -->
+                            <h3>
+                                <label for='product-44-44' id="BRANDSlabel">
+                
+                                      BRANDS
+                               </label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+                    <input type="radio" name="content6" value="content6" id="content6">
+                   Iphone
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="radio" name="content7" value="content7" id="content7">
+                   SAMSUNG
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="radio" name="content8" value="content8" id="content8">
+                   POCO
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="radio" name="content9" value="content9" id="content9">
+                    realme
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="radio" name="content10" value="content10" id="content10">
+                   OPPO
+                </label>
+                                </div>
+                            </div>
+                            <!--  CUSTOMER RATINGS -->
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+               
+                             CUSTOMER RATINGS
+                          </label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+                    <input type="checkbox" name="content11" value="content11" id="content11">
+                    4★ & above
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="checkbox" name="content12" value="content12" id="content12">
+                    3★ & above
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="checkbox" name="content13" value="content13" id="content13">
+                    2★ & above
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="checkbox" name="content14" value="content14" id="content14">
+                    1★ & above
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="checkbox" name="content15" value="content15" id="content15">
+                    5★
+                </label>
+                                </div>
+                            </div>
+
+                            <!-- internal storage -->
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+                
+                INTERNAL STORAGE
+            </label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+                    <input type="radio" name="content16" value="content16" id="content16">
+                    256GB & Above
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="radio" name="content17" value="content17" id="content17">
+                    128-255.9 GB
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="radio" name="content18"value="content18" id="content18">
+                   64-127.9 GB
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="radio" name="content19" value="content19" id="content19">
+                    32-63.9 GB
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="radio" name="content20" value="content20" id="content20">
+                   16-31.9 GB
+                </label>
+                                </div>
+                            </div>
+
+                            <!-- SIMTYPE -->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+               
+                                    SIMTYPE
+            </label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+                    <input type="checkbox" name="content21" value="content21" id="content21">
+                   Dual SIM
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="checkbox" name="content22" value="content22" id="content22">
+                    Dual SIM(Physical + eSIM)
+                </label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+                    <input type="checkbox" name="content23" value="content23" id="content23">
+                    Single SIM
+                </label>
+                                </div>
+
+                            </div>
+                            <!-- Network Type -->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+                             NETWORK TYPE
+                           </label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content24" value="content24" id="content24">
+2G
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content25" value="content25" id="content25">
+3G
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content26" value="content26" id="content26">
+4G
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content27" value="content27" id="content27">
+4G VOLTE
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content28" value="content28" id="content28">
+5G
+</label>
+                                </div>
+
+                            </div>
+
+                            <!-- SCREEN SIZE -->
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+                                    SCREEN SIZE
+</label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content29" value="content29" id="content29">
+5.7 - 5.9 inch
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content30" value="content30" id="content30">
+5.5 - 5.6 inch
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content31" value="content31" id="content31">
+5.2- 5.4 inch
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content32" value="content32" id="content32">
+5- 5.1 inch
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content33" value="content33" id="content33">
+6 Inch & above
+</label>
+                                </div>
+
+                            </div>
+
+                            <!-- PRIMARY CAMERA -->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+                                    PRIMARY CAMERA 
+</label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content34" value="content34" id="content34">
+5 - 7.9 MP
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content35" value="content35" id="content35">
+8- 11.9 MP
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content36" value="content36" id="content36">
+12 - 12.9 MP
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content37" value="content37" id="content37">
+13 - 15.9 MP
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content38" value="content38" id="content38">
+21 MP & above
+</label>
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- SECONDARY CAMERA -->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+        SECONDARY CAMERA  
+</label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content39" value="content39" id="content39">
+0-1.9 MP
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content40" value="content40" id="content40">
+12 - 12.9 MP
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content41" value="content41" id="content41">
+13 - 15.9 MP
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content42" value="content42" id="content42">
+16 - 20.9 MP
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content43" value="content43" id="content43">
+21 MP & above
+</label>
+                                </div>
+
+                            </div>
+
+
+
+                            <!--OFFERS -->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+        OFFERS
+</label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content44" value="content44" id="content44">
+Exhange Offers
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content45" value="content45" id="content45">
+No cost EMI
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content46" value="content46" id="content46">
+Special Price
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content47" value="content47" id="content47">
+Buy More, Save More
+</label>
+                                </div>
+                            </div>
+
+                            <!-- PROCESSOR BRAND -->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+            PROCESSOR BRAND 
+</label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content48" value="content48" id="content48">
+Exynos
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content49" value="content49" id="content49">
+HiSilicon
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content50" value="content50" id="content50">
+Huawei
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content51" value="content51" id="content51">
+Intel
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content52" value="content52" id="content52">
+Mediatek
+</label>
+                                </div>
+
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content53" value="content53" id="content53">
+RDA
+</label>
+                                </div>
+
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content54" value="content54" id="content54">
+Unisoc
+</label>
+                                </div>
+
+
+                            </div>
+
+
+                            <!--RESOLUTION TYPE-->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+        RESOLUTION TYPE
+</label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content55" value="content55" id="content55">
+Full HD
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content56" value="content56" id="content56">
+Full HD +
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content57" value="content57" id="content57">
+HD
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content58" value="content58" id="content58">
+HD +
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content59" value="content59" id="content59">
+Quad HD +
+</label>
+                                </div>
+                            </div>
+
+
+
+                            <!-- DISCOUNT-->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+                                    DISCOUNT
+</label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content60" value="content60" id="content60">
+10% and more
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content61" value="content61" id="content61">
+20% ad more
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content62" value="content62" id="content62">
+30% ad more
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content63" value="content63" id="content63">
+40% ad more
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content64" value="content64" id="content64">
+10% ad below
+</label>
+                                </div>
+
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content65" value="content65" id="content65">
+More than 50%
+</label>
+                                </div>
+                            </div>
+
+                            <!-- FEAUTURES-->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+        FEAUTURES
+</label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content66" value="content66" id="content66">
+WiFi
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content67" value="content67" id="content67">
+HD Recording
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content68" value="content68" id="content68">
+FM Player
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content69" value="content69" id="content69">
+NFC
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content70" value="content70" id="content70">
+Music Player
+</label>
+                                </div>
+
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content71" value="content71" id="content71">
+Bluetooth
+</label>
+                                </div>
+                            </div>
+
+                            <!--NUMBER OF CORES-->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+        NUMBER OF CORES
+</label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content72" value="content72" id="content72">
+Dual Core
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content73" value="content73" id="content73">
+Hexa Core
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content74" value="content74" id="content74">
+Octa Core
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content75" value="content75" id="content75">
+Quad Core
+</label>
+                                </div>
+
+                            </div>
+
+                            <!-- BUDGET-->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+        BUDGET
+</label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content76" value="content76" id="content76">
+Rs. 5000 and Below
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content77" value="content77" id="content77">
+Rs. 5000 to Rs. 9000
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content78" value="content78" id="content78">
+Rs. 10,000 to Rs. 14,999
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content79" value="content79" id="content79">
+Rs. 15,999 to Rs. 21,999
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content80" value="content80" id="content80">
+Rs. 21,999 to Rs. 30,999
+</label>
+                                </div>
+
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content81" value="content81" id="content81">
+Rs. 30,999 and above
+</label>
+                                </div>
+                            </div>
+
+                            <!--GST INVOICE AVAILABLE-->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+        GST INVOICE AVAILABLE
+</label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="radio" name="content82" value="content82" id="content82">
+GST invoice available
+</label>
+                                </div>
+                            </div>
+                            <!-- OPERATING SYSTEM VERSION-->
+
+
+                            <h3>
+                                <label for='product-44-44' id="Ratingslabel">
+
+        OPERATING SYSTEM VERSION
+</label>
+                            </h3>
+                            <div class="columns">
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content83" value="content83" id="content83">
+Andriod Q
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content84" value="content84" id="content84">
+KitKat
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content85" value="content85" id="content85">
+Lollipop
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content86" value="content86" id="content86">
+Marshmellow
+</label>
+                                </div>
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content87" value="content87" id="content87">
+Nougat
+</label>
+                                </div>
+
+                                <div class="d1">
+                                    <label>
+<input type="checkbox" name="content88" value="content88" id="content88">
+Oreo
+</label>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="Flexcolumn" style="background-color:#ececec;">
+                    <div id="gallery">
+                        <div id="Desc1" class="phoneprice">
+                            <img src="Images_Listing/img1.jpg" width="200" height="250" alt="Honor Mobile Phone"></img>
+                            <div class="product-info">
+
+                                <p> Honor<br> Honor Galaxy A22 128 GB<br> 6 GB RAM, Dual SIM 5G<br>&#x20b9 13,678<br>
+                                    <button class="ratingbutton">4.4 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 10,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+
+                        <div id="Desc2" class="phoneprice">
+                            <img src="Images_Listing/img2.jpg" width="200" height="250" alt="Redmi Mobile Phone"></img>
+                            <div class="product-info">
+                                <p> Redmi<br> Redmi Note5 PRO 64 GB<br> 4 GB RAM, Dual SIM 4G<br>&#x20b9 14,978<br>
+                                    <button class="ratingbutton">4.2 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 10,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+
+
+                        <div id="Desc3" class="phoneprice">
+                            <img src="Images_Listing/img3.jpg" width="200" height="250" alt="Vivo Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>Vivo<br> Y91i Smart Phone 32 GB<br>2 GB RAM, Dual SIM 4G<br>&#x20b9 11,678<br>
+                                    <button class="ratingbutton">4.0 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 10,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc4" class="phoneprice">
+                            <img src="Images_Listing/img7.jpg" width="200" height="250" alt="Vivo Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>Vivo<br> V9 Pro-1 Smart Phone 64 GB<br>4 GB RAM, Dual SIM 4G<br>&#x20b9 14,678<br>
+                                    <button class="ratingbutton">4.2 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 10,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc5" class="phoneprice">
+                            <img src="Images_Listing/img5.jpg" width="200" height="250" alt="Oneplus Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>One Plus<br>OnePlus Nord CE 5G<br>8 GB RAM, Dual SIM 4G<br>&#x20b9 24,999.00<br>
+                                    <button class="ratingbutton">4.2 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 13,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc6" class="phoneprice">
+                            <img src="Images_Listing/img6.jpg" width="200" height="250" alt="Oppo Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>Oppo<br>Oppo F19<br>6GB RAM, 128GB Storage<br>&#x20b9 18,990.00<br>
+                                    <button class="ratingbutton">4.4 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 8,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc7" class="phoneprice">
+                            <img src="Images_Listing/img8.jpg" width="200" height="250" alt="MI Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>MI<br>Mi 11X 5G Celestial<br>6GB RAM 128GB ROM<br>&#x20b9 29,999.00<br>
+                                    <button class="ratingbutton">3.2 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 11,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc8" class="phoneprice">
+                            <img src="Images_Listing/img9.jpg" width="200" height="250" alt="Vivo Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>Vivo<br>Vivo Y51A<br>8GB, 128GB Storage<br>&#x20b9 17,990.00<br>
+                                    <button class="ratingbutton">4.2 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 11,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc9" class="phoneprice">
+                            <img src="Images_Listing/img10.jpg" width="200" height="250" alt="Redmi Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>Redmi<br>Redmi Note 10<br>4GB RAM, 64GB Storage<br>&#x20b9 13,499.00<br>
+                                    <button class="ratingbutton">3.5 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 6,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc10" class="phoneprice">
+                            <img src="Images_Listing/img11.jpg" width="200" height="250" alt="Iphone Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>Iphone<br>New Apple iPhone XR<br>4GB RAM, 64GB Storage<br>&#x20b9 42,999.00<br>
+                                    <button class="ratingbutton">4.3 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 8,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc11" class="phoneprice">
+                            <img src="Images_Listing/img12.jpg" width="200" height="250" alt="Iphone Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>Iphone<br>New Apple iPhone 12<br>4GB RAM, 64GB Storage<br>&#x20b9 72,900.00<br>
+                                    <button class="ratingbutton">4.3 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 18,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc12" class="phoneprice">
+                            <img src="Images_Listing/img13.jpg" width="200" height="250" alt="Nokia Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>Iphone<br>New Apple iPhone 12 Mini<br>4GB RAM, 64GB Storage<br>&#x20b9 52,900.00<br>
+                                    <button class="ratingbutton">4.4 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 8,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc13" class="phoneprice">
+                            <img src="Images_Listing/img14.jpg" width="200" height="250" alt="Samsung Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>Nokia<br>Nokia G20 Smartphone<br>4GB RAM, 64GB Storage<br>&#x20b9 12,990.00<br>
+                                    <button class="ratingbutton">4.4 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 8,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc14" class="phoneprice">
+                            <img src="Images_Listing/img16.jpg" width="200" height="250" alt="Samsung Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>Samsung<br>Samsung Galaxy M12<br>4GB RAM, 64GB Storage<br>&#x20b9 10,999.00<br>
+                                    <button class="ratingbutton">3.1 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 1,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc15" class="phoneprice">
+                            <img src="Images_Listing/img17.jpg" width="200" height="250" alt="Vivo Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>Samsung<br>Samsung Galaxy M11<br>4GB RAM, 64GB Storage<br>&#x20b9 10,499.00<br>
+                                    <button class="ratingbutton">3.5 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 1,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                        <div id="Desc16" class="phoneprice">
+                            <img src="Images_Listing/Samsung_15.jpg" width="200" height="250" alt="Samsung Mobile Phone"></img>
+                            <div class="product-info">
+                                <p>Vivo<br>Vivo Y61A<br>8GB, 128GB Storage<br>&#x20b9 17,990.00<br>
+                                    <button class="ratingbutton">4.1 <span class="fa fa-star checked"></span></button><br>
+                                    <span class="fa fa-money"></span>Upto &#x20b9 11,000 Exchg Cashback</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                </div>
+                <div class="pagination_section">
+
+                    <nav data-pagination>
+                        <a href=# disabled><i class="fa fa-angle-left"></i></a>
+                        <ul>
+                            <li class=current><a href=#1>1</a>
+                                <li><a href=#2>2</a>
+                                    <li><a href=#3>3</a>
+                                        <li><a href=#4>4</a>
+                                            <li><a href=#5>5</a>
+                                                <li><a href=#6>6</a>
+                                                    <li><a href=#7>7</a>
+                                                        <li><a href=#8>8</a>
+                                                            <li><a href=#9>9</a>
+                                                                <li><a href=#10>…</a>
+                                                                    <li><a href=#41>41</a>
+                        </ul>
+                        <a href=#2><i class="fa fa-angle-right"></i></a>
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </main>
+        <footer>
+            <section id="phonesta">
+                <a href="#">About us</a>
+                <a href="#">Sell with us</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">SiteMap</a>
+            </section>
+            <section id="user_account">
+                <a href="#">My Account</a>
+                <a href="#">My Orders</a>
+                <a href="#">My Shopping bag</a>
+                <a href="#">My Wishlist</a>
+            </section>
+            <section id="customer_services">
+                <a href="#">Frequently asked questions</a>
+                <a href="#">Cancellation</a>
+                <a href="#">Returns & Refunds</a>
+                <a href="#">EMI Plans</a>
+                <a href="#">Offers and Promotions</a>
+                <a href="#">Contact us</a>
+            </section>
+            <section id="subscribe">
+                <p>Subscribe to our newsletter for immediate update on offers and live sale</p>
+                <form method="GET">
+                    <input type="email" name="email" id="email"><br>
+                    <button type="submit" id="submit">Subscribe</button>
+                </form>
+            </section>
+            <p id="copyright">&copy;Phonesta | All Right reserved</p>
+        </footer>
+    </div>
+
+
+</body>
+<link rel='stylesheet' type='text/css' media='screen' href='Css/Phonesta.css'>
+<script src='Js/phonesta.js'></script>
+
+</html>
