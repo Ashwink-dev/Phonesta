@@ -20,15 +20,16 @@ header{
 }
 
 #search {
-    width: 35vw;
-    align-self: flex-end;
-    padding-left: 20%;
-
+    margin-left: 15vw;
+    margin-right: 5vw;
+    width: 30vw;
+    align-self: center;
 }
 
 #login {
-    width: 35vw;
-    align-self: flex-end;   
+    margin-right: 5vw;
+    width: 15vw;
+    align-self: center;   
 }
 
 nav {
@@ -36,48 +37,72 @@ nav {
     color: #f0f0f0;
 }
 
-#menu {
+#menu{
     padding: 1em 0 ;
+    width: 100%;
     list-style-type: none;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-around;
-    align-content: flex-end;
+}
+
+#search input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;text-align: left;
+  }
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu a:visited {
+    color: #f0f0f0;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 footer {
     background-color: #1f2833;
     color: aliceblue;
-    margin-top: 10%;
     display: grid;
     grid-template-areas: "sec1 sec2 sec3 sec4"
                          "foot . . .";
     grid-template-columns: 20vw 20vw 20vw 40vw;
 }
 
-#phoesta {
+#phonesta {
     grid-area: sec1;
 }
 #user_account {
-    grid-area: sec1;
+    grid-area: sec2;
 }
-#customer_service {
-    grid-area: sec1;
+#customer_services {
+    grid-area: sec3;
 }
 #subscribe {
     grid-area: sec4;
-    border: 1px solid #f0f0f0;
     place-self: center;
     text-align: center;
     padding: 20px;
 }
-
+#subscribe input {
+    text-align: center;
+    width: 70%;
+}
 #subscribe button {
     margin-top: 10px;
     border-radius: 20px;
     padding: 10px;
     color: #1f2833;
     background-color: #f0f0f0;
+    box-shadow: 2px 1px solid #1f2833 inset;
 }
 footer section a {
     text-decoration: none;
@@ -86,6 +111,7 @@ footer section a {
     align-items: center;
     padding: 10px 5px;
 }
+
 #copyright {
     grid-column: 1/5;
     justify-self: center;
@@ -94,16 +120,35 @@ footer section a {
 @media (max-width:768px) {
     header{
         height: 15vh;
-        flex-flow: column wrap;
+        flex-direction: column;
         padding: 3px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #search, #logo, #login {
+        padding: auto;
+        margin: auto;
+    }
 
-    }
-    nav {
-        height: 30vh;
-    }
     #menu {
         flex-direction: column;
         padding: 5px;
-        justify-self: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #menu li {
+        padding: 10px 0;
+    }
+    footer {
+        grid-template-areas: "sec1"
+                             "sec2"
+                             "sec3"
+                             "sec4"
+                             "foot";
+        grid-template-columns: 100vw;
+        margin: 0;
+    }
+    #phonesta, #user_account, #customer_services, #subscribe{
+        margin-left: 10%;
     }
 }

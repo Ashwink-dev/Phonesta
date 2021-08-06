@@ -13,21 +13,18 @@
 <body id="grid">
     <header>
         <img id="logo" src="phonesta_logo.png" alt="PHONESTA">
-        <div id="search">
-            <input type="text" placeholder="Search" maxlength="100">
-        </div>
+        <input type="text" id="search" placeholder="Search" maxlength="100">
         <button type="submit" id="login" name="login" >LOGIN</button>
     </header>
         <nav>
             <ul id="menu">
-                <li>BRANDS</li>
+                <li><a href="emi.html">BRANDS</a></li>
                 <li><a href="emi.html">EMI</a></li>
-                <li>TRACK ORDERS</li>
-                <li>CONTACT</li>
-                <li>CART</li>
+                <li><a href="emi.html">TRACK ORDERS</a></li>
+                <li><a href="emi.html">CONTACT</a></li>
+                <li><a href="emi.html">CART</a></li>
             </ul>   
-        </nav>
-    
+        </nav>  
     <main>
         <ul class="slideshow">
                 <li><img src="images/slider_1.jpeg" alt="One plus"></li>
@@ -41,16 +38,16 @@
         </div>
         <p id="caption">Super Duper Brands!</p>
         <ul id="brands">
-            <button id="oneplus" name="oneplus" value="oneplus">OnePlus</button>
-            <button id="samsung" name="samsung" value="samsung">Samsung</button>
-            <button id="xiaomi" name="xiaomi" value="xiaomi">Xiaomi</button>
-            <button id="apple" name="apple" value="apple">Apple</button>
-            <button id="realme" name="realme" value="realme">Realme</button>
-            <button id="oppo" name="oppo" value="oppo">OPPO</button>
-            <button id="micromax" name="micromax" value="micromax">Micromax</button>
-            <button id="motorola" name="motorola" value="motorola">Motorola</button>
-            <button id="ininix" name="ininix" value="ininix">Infinix</button>
-            <button id="poco" name="poco" value="poco">POCO</button>
+            <li id="oneplus">Oneplus<br><p><a href="#" class="shop">Shop Now</a></p></li>
+            <li id="samsung">Samsung<br><p><a href="#" class="shop">Shop Now</a></p></li>
+            <li id="xiaomi">Xiaomi<br><p><a href="#" class="shop">Shop Now</a></p> </li>
+            <li id="apple">Apple<br><p><a href="#" class="shop">Shop Now</a></p></li>
+            <li id="realme">Realme<br><p><a href="#" class="shop">Shop Now</a></p> </li>
+            <li id="oppo">OPPO<br><p><a href="#" class="shop">Shop Now</a></p></li>
+            <li id="micromax">Micromax<br><p><a href="#" class="shop">Shop Now</a></p> </li>
+            <li id="motorola">Motorola<br><p><a href="#" class="shop">Shop Now</a></p></li>
+            <li id="ininix" >Infinix<br><p><a href="#" class="shop">Shop Now</a></p></li>
+            <li id="poco">POCO<br><p><a href="#" class="shop">Shop Now</a></p></li>
 
 
         </ul>
@@ -65,29 +62,20 @@
             <li><img src="images/model_7.jpeg" alt="xiaomi"></li>
             <li><img src="images/model_8.jpeg" alt="Realme"></li>
         </ul>
-        <p id="caption">Mobile Accessories</p>
-        <ul id="phone_accessories">
+        <p class="caption">Mobile Accessories</p>
+        <ul class="accessories">
             <li><img src="images/acc_1.jpeg" alt="One plus"></li>
             <li><img src="images/acc_2.jpeg" alt="Samsung"></li>
             <li><img src="images/acc_3.jpeg" alt="xiaomi"></li>
             <li><img src="images/acc_4.jpeg" alt="Realme"></li>
-            <!-- <li><img src="images/model_5.jpeg" alt="One plus"></li>
-            <li><img src="images/model_6.jpeg" alt="Samsung"></li>
-            <li><img src="images/model_7.jpeg" alt="xiaomi"></li>
-            <li><img src="images/model_8.jpeg" alt="Realme"></li> -->
         </ul>
-        <p id="caption">Audio Accessories</p>
-        <ul id="audio_accessories">
+        <p class="caption">Audio Accessories</p>
+        <ul class="accessories">
             <li><img src="images/audio_1.png" alt="One plus"></li>
             <li><img src="images/audi0_2.png" alt="Samsung"></li>
             <li><img src="images/audio_3.png" alt="xiaomi"></li>
             <li><img src="images/audio_4.png" alt="Realme"></li>
-            <!-- <li><img src="images/model_5.jpeg" alt="One plus"></li>
-            <li><img src="images/model_6.jpeg" alt="Samsung"></li>
-            <li><img src="images/model_7.jpeg" alt="xiaomi"></li>
-            <li><img src="images/model_8.jpeg" alt="Realme"></li> -->
         </ul> 
-
     </main>
     <footer>
         <section id="phonesta">
@@ -114,7 +102,7 @@
         <section id="subscribe">
             <p>Subscribe to our newsletter for immediate update on offers and live sale</p>
             <form  method="GET">
-                <input type="email" name="email" id="email"><br>
+                <input type="email" name="email" id="email" placeholder="Your E-mail address"><br>
                 <button type="submit" id="submit">Subscribe</button>
             </form>
         </section>

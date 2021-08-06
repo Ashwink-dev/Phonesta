@@ -1,0 +1,87 @@
+/* EMI Page CSS */
+
+nav ul{
+    margin: 0;
+}
+main {
+    width: 80%;
+    margin: 5%;
+    display: grid;
+    grid-template-areas: "info . ."
+                         "filter table ads";
+    grid-template-columns: 15% 50% 20%;
+    gap: 5%;
+}
+
+p {
+    grid-column: 1/4;
+}
+
+#filter {
+    grid-area: filter;
+    margin-left: 20%;
+    margin-top: 5%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+table {
+    grid-area: table;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tr, td, th {
+    border: 1px solid #1f2833;
+    padding: 0%;
+    
+}
+
+input {
+    width: 10%;
+    height: 10px;
+    margin-right: 0%;
+}
+
+label {
+    width:80%;
+    height: 10px;
+    padding-bottom: 10%;
+}
+
+#ads {
+    grid-area: ads;
+    margin-bottom: 5%;
+}
+
+@media (max-width:768px) {
+    main {
+        grid-template-areas: "info "
+                             "filter"
+                             "table"
+                             "ads";
+        grid-template-columns: 100%;
+
+    }
+    #ads {
+        margin:0;
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+    }
+    #ads iframe{
+        width: 45%;
+        padding-right: 10%;
+    }
+
+    #filter {
+        margin: auto;
+        flex-flow: row;
+    }
+    #filter input {
+        width: fit-content;
+    }
+    footer {
+        margin-top: 15%;
+    }
+}

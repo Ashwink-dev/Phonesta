@@ -19,7 +19,6 @@ header{
 }
 nav {
     grid-area: nav;
-    height: 10vh;
 }
 
 .slideshow {
@@ -37,7 +36,7 @@ nav {
 #top_models {
     grid-area: models;
 }
-#caption {
+.caption {
     width: 100vw;
     padding: 10px;
     font-size: 4em;
@@ -46,12 +45,13 @@ nav {
     text-shadow: 2px 2px #f0f0f0;
     text-align: center;
 }
-#phone_accessories{
+.accessories{
     grid-area: accessories;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-#audio_accessories{
-    grid-area: audio;
-}
+
 footer {
     grid-area: footer;
 }
@@ -59,6 +59,7 @@ footer {
 /* Slide show */
 ul {
     width : 100%;
+    padding: 0;
     list-style-type: none;
   }
 .slideshow img, #offer_banner img {
@@ -126,7 +127,7 @@ ul {
   animation-name: img4;
 }
 
-#top_models, #phone_accessories, #audio_accessories {
+#top_models {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -134,60 +135,90 @@ ul {
 }
 
 #top_models img {
-    width: 25vw;
+    width: 20vw;
+    padding: 2vw;
 }
 
+#brands{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#brands li {
+    border: 1px solid #1f2833;
+    color: #f0f0f0;
+    background-color: #1f2833;
+    width: 15%;
+    border-radius: 20px;
+    padding: 10px 5px 0 ;
+    margin: 5% 1%;
+    font-size: 2.5em;
+    text-align: center;
+    box-shadow: 0 2px 2px rgba(11, 11, 11, 0.5) inset, 0 1px 1px rgb(255, 255, 255);
+}
+
+.shop {
+    font-size: 0.5em;
+    color: #1f2833;
+    text-decoration: none;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 0 10px;
+    border: 1px solid;
+    border-color: #d3dce1 #cbd0d3 #858788;
+    border-radius: 21px;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2) inset, 0 1px 1px rgba(1, 4, 8, 1);
+    background-color: #f0f0f0;
+      
+  }
+  .shop:hover {
+    text-decoration: none;
+    border-color: #377cae #175a9c #0c4893;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2) inset, 0 1px 1px rgba(5, 64, 140, 0.2);
+    
+    background-color: #4fa6e4;
+    transform: scale(1.2);
+  }
+  .shop:active {
+    border-color: #094b84 #094b84 #0f4585;
+    box-shadow: 0 1px 1px rgba(241, 243, 247, 0.2), 0 0 20px rgba(0, 0, 0, 0.5) inset;
+    background-color: #1c7ec9;
+    transform: scale(1.2);
+  }
 
 @media (max-width:768px) {
+    #top_models {
+        flex-direction: column;   
+    }
     #top_models img {
-        width: 50vw;
+        margin: auto;
+        width: 100%;    
     }
     .slideshow li {
         top: 50vh;
     }
 
+    #brands{
+        flex-flow: row wrap;
+    }
+
+    #brands li {
+        width: 50%;
+    }
+
+    .accessories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accessories li {
+        padding: 5% 0;
+    }
+
 }
 
-/* EMI Page */
-  #emi {
-    margin: 0 auto;
-    width: 80vw;
-    display: grid;
-    grid-template-areas: "info info"
-                         "list table";
-    grid-template-columns: 30% 100%;
 
-  }
-  #emi table {
-    grid-area: table;
-    border: 1px solid grey;
-  }
-
-  #emi filter {
-      grid-area: list;
-  }
-
- td, th{
-    border-bottom: 0.5px solid lightgrey;
-    border-right: 0.5px solid lightgrey;
-    font-size: 0.9em;
-    text-align: center;
-  }
   
-caption {
-      font-weight: bolder;
-      font-size: 1em;
-      padding: 1em 0;
-  }
-  
-#emi p {
-      grid-area: info;
-      font-size: 1em;
-  }
 
-#emi #filter {
-    width: 100%;
-    outline: 1px solid blue;
-    display: flex;
-    flex-direction: row;
-}
