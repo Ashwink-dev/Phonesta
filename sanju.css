@@ -9,26 +9,24 @@
                          "brands"
                          "models"
                          "accessories"
-                         "audio"
                          "footer";
     grid-template-columns: 100vw;
 }
 header{
     grid-area: header;
-    height: 15vh;
+    height: 10vh;
 }
 nav {
     grid-area: nav;
+    height: 9vh;
 }
 
-.slideshow {
+#slideshow {
     grid-area: slider;
-    width : 100vw;
-    height: 100vh;
 }
 #offer_banner {
     grid-area: offer;
-    object-fit: contain;
+    
 }
 #brands {
     grid-area: brands;
@@ -58,15 +56,16 @@ footer {
 
 /* Slide show */
 ul {
-    width : 100%;
     padding: 0;
     list-style-type: none;
   }
-.slideshow img, #offer_banner img {
+
+#slideshow img, #offer_banner img {
     width : 100vw;
     height: 100vh;
     object-fit: cover;
   }
+
 
 @keyframes img1 {
     0%   { opacity: 1; }
@@ -102,28 +101,28 @@ ul {
 
 }
 
-.slideshow li {
+#slideshow li {
     position: absolute;
-    top: 25vh;
+    top: 20vh;
     left: 0;
-    margin-top: 1em;
+    height: 45vh;
     animation-duration: 16s;
     animation-iteration-count: infinite;
 }
 
-.slideshow li:nth-child(1) {
+#slideshow li:nth-child(1) {
   animation-name: img1;
 }
 
-.slideshow li:nth-child(2) {
+#slideshow li:nth-child(2) {
   animation-name: img2;
 }
 
-.slideshow li:nth-child(3) {
+#slideshow li:nth-child(3) {
   animation-name: img3;
 }
 
-.slideshow li:nth-child(4) {
+#slideshow li:nth-child(4) {
   animation-name: img4;
 }
 
@@ -156,7 +155,11 @@ ul {
     margin: 5% 1%;
     font-size: 2.5em;
     text-align: center;
-    box-shadow: 0 2px 2px rgba(11, 11, 11, 0.5) inset, 0 1px 1px rgb(255, 255, 255);
+    box-shadow: 0 2px 2px rgba(11, 11, 11, 0.5) inset;
+}
+
+#offer_banner img {
+    margin-top: 100vh;
 }
 
 .shop {
@@ -189,6 +192,7 @@ ul {
   }
 
 @media (max-width:768px) {
+
     #top_models {
         flex-direction: column;   
     }
@@ -196,16 +200,26 @@ ul {
         margin: auto;
         width: 100%;    
     }
-    .slideshow li {
+    header{
+        height: 18vh;
+    }
+    nav {
+        height: 30vh;
+    }
+    #slideshow li {
         top: 50vh;
     }
-
     #brands{
+        top: 98vh;
         flex-flow: row wrap;
     }
 
     #brands li {
         width: 50%;
+        border-radius: 20px;
+        padding: 5px 1px 0 ;
+        margin: 5% 1%;
+        font-size: 2em;
     }
 
     .accessories {

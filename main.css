@@ -15,21 +15,40 @@ header{
 } 
 
 #logo {
-    width: 30vw;
+    width: 15vw;
     object-fit: contain;
 }
-
 #search {
     margin-left: 15vw;
     margin-right: 5vw;
-    width: 30vw;
+    width: 40vw;
     align-self: center;
+}
+#search input[type="text"] {
+    width: 25vw;
+    background-color: #1f2833;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    color: #fff;
+    height: 100%;
+    padding: 6px 10px;
+    text-align: left;
 }
 
 #login {
-    margin-right: 5vw;
-    width: 15vw;
-    align-self: center;   
+    width: 25vw;
+    height: 100%;
+    background-color: #1f2833;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.login , #cart {
+    place-self: center;
+    background-color: #1f2833;
+    color: #fff;
+    height: 100%;
+    border: none;
 }
 
 nav {
@@ -45,18 +64,9 @@ nav {
     flex-direction: row;
     justify-content: space-around;
 }
-
-#search input {
-    all: unset;
-    font: 16px system-ui;
-    color: #fff;
-    height: 100%;
-    width: 100%;
-    padding: 6px 10px;text-align: left;
-  }
-
 #menu a {
     text-decoration: none;
+    color: #f0f0f0;
 }
 
 #menu a:visited {
@@ -68,14 +78,6 @@ nav {
     transform: scale(1.1);
 }
 
-footer {
-    background-color: #1f2833;
-    color: aliceblue;
-    display: grid;
-    grid-template-areas: "sec1 sec2 sec3 sec4"
-                         "foot . . .";
-    grid-template-columns: 20vw 20vw 20vw 40vw;
-}
 
 #phonesta {
     grid-area: sec1;
@@ -104,6 +106,16 @@ footer {
     background-color: #f0f0f0;
     box-shadow: 2px 1px solid #1f2833 inset;
 }
+
+footer {
+    background-color: #1f2833;
+    color: aliceblue;
+    display: grid;
+    grid-template-areas: "sec1 sec2 sec3 sec4"
+                         "foot . . .";
+    grid-template-columns: 20vw 20vw 20vw 40vw;
+}
+
 footer section a {
     text-decoration: none;
     color: aliceblue;
@@ -119,13 +131,14 @@ footer section a {
 
 @media (max-width:768px) {
     header{
-        height: 15vh;
+        height: 20vh;
         flex-direction: column;
-        padding: 3px;
+        padding: 5px;
         align-items: center;
         justify-content: space-around;
     }
     #search, #logo, #login {
+        height: fit-content;
         padding: auto;
         margin: auto;
     }

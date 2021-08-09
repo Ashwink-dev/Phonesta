@@ -7,14 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="emi.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Phonesta</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img id="logo" src="phonesta_logo.png" alt="PHONESTA"></a>
-        <input type="text" id="search" placeholder="Search" maxlength="100">
-        <button type="submit" id="login" name="login" >LOGIN</button>
+        <a href="#"><img id="logo" src="phonesta_logo.png" alt="PHONESTA"></a>
+        <div id="search">
+            <input type="text" name="text" class="search" placeholder="Search here!">
+            <input type="submit" name="submit" class="submit">
+        </div>
+        <div id="login">
+        <button type="submit" id="cart" name="login" ><i class="fas fa-shopping-cart"></i></button>
+        <button type="submit" class="login" name="login" ><i class="fas fa-sign-in-alt"></i></button>
+        </div>
     </header>
         <nav>
             <ul id="menu">

@@ -7,14 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="sanju.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
     <title>Phonesta</title>
 </head>
 
 <body id="grid">
     <header>
-        <img id="logo" src="phonesta_logo.png" alt="PHONESTA">
-        <input type="text" id="search" placeholder="Search" maxlength="100">
-        <button type="submit" id="login" name="login" >LOGIN</button>
+        <a href="#"><img id="logo" src="phonesta_logo.png" alt="PHONESTA"></a>
+        <div id="search">
+            <input type="text" name="text" class="search" placeholder="Search here!">
+            <input type="submit" name="submit" class="submit">
+        </div>
+        <div id="login">
+        <button type="submit" id="cart" name="login" ><i class="fas fa-shopping-cart"></i></button>
+        <button type="submit" class="login" name="login" ><i class="fas fa-sign-in-alt"></i></button>
+        </div>
     </header>
         <nav>
             <ul id="menu">
@@ -26,17 +35,22 @@
             </ul>   
         </nav>  
     <main>
-        <ul class="slideshow">
+        </div>
+        <ul id="slideshow">
                 <li><img src="images/slider_1.jpeg" alt="One plus"></li>
                 <li><img src="images/slider_2.jpeg" alt="Samsung"></li>
                 <li><img src="images/slider_3.jpeg" alt="xiaomi"></li>
                 <li><img src="images/slider_4.jpeg" alt="Realme"></li>
         </ul>  
         </div>
-        <div id="offer_banner">
+        <picture id="offer_banner">
+            <source media="(min-width:768px)" srcset="images/sale_banner_small.jpg">
+            <source media="(min-width:465px)" srcset="images/sale_banner.jpeg">
+            <!-- <source media="(max-width:768px)" srcset="images/sale_banner_small.jpg">
+            <source media="(min-width:768px)" srcset="images/sale_banner_big.jpg"> -->
             <img src="images/sale_banner.jpeg" alt="One plus">
-        </div>
-        <p id="caption">Super Duper Brands!</p>
+        </picture>
+        <p class="caption">Super Duper Brands!</p>
         <ul id="brands">
             <li id="oneplus">Oneplus<br><p><a href="#" class="shop">Shop Now</a></p></li>
             <li id="samsung">Samsung<br><p><a href="#" class="shop">Shop Now</a></p></li>
@@ -51,7 +65,7 @@
 
 
         </ul>
-        <p id="caption">Hot Sellers - Aug 2021</p>
+        <p class="caption">Hot Sellers - Aug 2021</p>
         <ul id="top_models">
             <li><img src="images/model_1.jpeg" alt="One plus"></li>
             <li><img src="images/model_2.jpeg" alt="Samsung"></li>
