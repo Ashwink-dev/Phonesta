@@ -18,7 +18,7 @@
         <a href="#"><img id="logo" src="phonesta_logo.png" alt="PHONESTA"></a>
         <div id="search">
             <input type="text" name="text" class="search" placeholder="Search here!">
-            <input type="submit" name="submit" class="submit">
+            <button type="submit" class="login" name="login" ><i class="fas fa-search"></i></i></button>
         </div>
         <div id="login">
         <button type="submit" id="cart" name="login" ><i class="fas fa-shopping-cart"></i></button>
@@ -27,7 +27,20 @@
     </header>
         <nav>
             <ul id="menu">
-                <li><a href="emi.html">BRANDS</a></li>
+                <li><a href="emi.html">BRANDS</a>
+                    <ul>
+                      <li><a href="">Oneplus</a></li>
+                      <li><a href="">Xiaomi</a></li>
+                      <li><a href="">Samsung</a></li>
+                      <li><a href="">POCO</a></li>
+                      <li><a href="">Oppo</a></li>
+                      <li><a href="">Apple</a></li>
+                      <li><a href="">Realme</a></li>
+                      <li><a href="">Micromax</a></li>
+                      <li><a href="">Motorola</a></li>
+                      <li><a href="">Infinix</a></li>
+                    </ul>
+                </li>
                 <li><a href="emi.html">EMI</a></li>
                 <li><a href="emi.html">TRACK ORDERS</a></li>
                 <li><a href="emi.html">CONTACT</a></li>
@@ -43,14 +56,7 @@
                 <li><img src="images/slider_4.jpeg" alt="Realme"></li>
         </ul>  
         </div>
-        <picture id="offer_banner">
-            <source media="(min-width:768px)" srcset="images/sale_banner_small.jpg">
-            <source media="(min-width:465px)" srcset="images/sale_banner.jpeg">
-            <!-- <source media="(max-width:768px)" srcset="images/sale_banner_small.jpg">
-            <source media="(min-width:768px)" srcset="images/sale_banner_big.jpg"> -->
-            <img src="images/sale_banner.jpeg" alt="One plus">
-        </picture>
-        <p class="caption">Super Duper Brands!</p>
+        <p id="brands_caption">Super Duper Brands!</p>
         <ul id="brands">
             <li id="oneplus">Oneplus<br><p><a href="#" class="shop">Shop Now</a></p></li>
             <li id="samsung">Samsung<br><p><a href="#" class="shop">Shop Now</a></p></li>
@@ -65,6 +71,12 @@
 
 
         </ul>
+        <picture id="offer_banner">
+            <source media="(min-width:768px)" srcset="images/banner_big.png">
+            <source media="(min-width:465px)" srcset="images/banner_small.png">
+            <img src="images/sale_banner.jpeg" alt="One plus">
+        </picture>
+        
         <p class="caption">Hot Sellers - Aug 2021</p>
         <ul id="top_models">
             <li><img src="images/model_1.jpeg" alt="One plus"></li>
