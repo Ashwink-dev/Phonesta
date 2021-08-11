@@ -12,10 +12,12 @@
                          "footer";
     grid-template-columns: 100vw;
 }
+
 header{
     grid-area: header;
     height: 10vh;
 }
+
 nav {
     grid-area: nav;
     height: 10vh;
@@ -59,9 +61,11 @@ ul {
     padding: 0;
     list-style-type: none;
   }
-  #offer_banner img {
+
+#offer_banner img {
     width : 100vw;
-  }
+}
+
 #slideshow img{
     width : 100vw;
     height: 100vh;
@@ -208,17 +212,19 @@ ul {
         width: 100%;    
     }
     header{
-        height: 18vh;
+        height: 20vh;
     }
     nav {
-        height: 30vh;
+        height: 40vh;
     }
     #slideshow li {
-        top: 50vh;
+        top: 60vh;
     }
     #brands{
         top: 98vh;
-        flex-flow: row wrap;
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
     }
 
     #brands li {
