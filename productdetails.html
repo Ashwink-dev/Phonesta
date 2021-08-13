@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phonesta - Product#1</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/main.css">
     <link href="css/details.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,10 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
   <body>
     <header>
@@ -24,37 +22,43 @@
         <div class="LogoWrapper">
           <a href="/">Phonesta</a>
         </div>
-        <div class="SearchBar">
-          <div class="textboxWrapper">
-            <input
-              type="text"
-              title="Search for mobiles"
-              autocomplete="off"
-              placeholder="Search for mobiles"
-            />
+        <div class="SearchBarWrapper desktop">
+          <div class="searchBar">
+          <input type="text" placeholder="search mobiles" />
+          <div class="SearchBtn"><i class="fas fa-search"></i></div>
+         </div>
+         <div class="ButtonWrapper">
+           <button class="Phonestabtn"><i class="fas fa-shopping-cart" style="margin-top: 3px;"></i></button>
+           <button class="Phonestabtn"><i class="fas fa-sign-in-alt" style="margin-top: 3px;"></i></i></button>
           </div>
-          <button class="SearchButton">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 17 18"
-              class=""
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g fill="#2874F1" fill-rule="evenodd">
-                <path
-                  class="_34RNph"
-                  d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"
-                ></path>
-                <path
-                  class="_34RNph"
-                  d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"
-                ></path>
-              </g>
-            </svg>
-          </button>
         </div>
+         <!-- Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect from www.flaticon.com -->
+         <img src="/images/hamburger.png" alt="Menu" class="mobile hamburger" />
+         <!-- Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect from www.flaticon.com -->
+         <nav>
+          <ul id="menu">
+              <li><a href="emi.html">BRANDS</a>
+                  <ul class="nestedMenu">
+                    <li><a href="">Oneplus</a></li>
+                    <li><a href="">Xiaomi</a></li>
+                    <li><a href="">Samsung</a></li>
+                    <li><a href="">POCO</a></li>
+                    <li><a href="">Oppo</a></li>
+                    <li><a href="">Apple</a></li>
+                    <li><a href="">Realme</a></li>
+                    <li><a href="">Micromax</a></li>
+                    <li><a href="">Motorola</a></li>
+                    <li><a href="">Infinix</a></li>
+                  </ul>
+              </li>
+              <li><a href="emi.html">EMI</a></li>
+              <li><a href="emi.html">TRACK ORDERS</a></li>
+              <li><a href="emi.html">CONTACT</a></li>
+              <li><a href="emi.html">CART</a></li>
+          </ul>   
+      </nav>     
       </nav>
+         
     </header>
     <div id="details" class="wrapper">
       <div class="BreadscrumbWrapper">
@@ -160,75 +164,76 @@
         </div>
       </div>
       <div class="productDetails">
-        <h2>APPLE iPhone 12 (White, 128 GB)</h2>
-        <div class="badgeWrapper">
-          <div class="ratings">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span>42 ratings</span>
+        <div class="detailsWrapper">
+          <h2>APPLE iPhone 12 (White, 128 GB)</h2>
+          <div class="badgeWrapper">
+            <div class="ratings">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span>42 ratings</span>
+            </div>
+            <span class="PhonestaBadge"> Bestseller </span>
           </div>
-          <span class="PhonestaBadge"> Bestseller </span>
-        </div>
-        <h1>$ 979</h1>
-        <p class="productDescription">
-          The iPhone 12 and iPhone 12 Mini (stylized and marketed as iPhone 12
-          mini) are a range of smartphones designed, developed, and marketed by
-          Apple Inc. They are the fourteenth-generation, lower-priced iPhones,
-          succeeding the iPhone 11. They were unveiled at a virtually held Apple
-          Special Event at Apple Park in Cupertino, California on October 13,
-          2020, alongside the higher-end iPhone 12 Pro and iPhone 12 Pro Max
-          flagships. Pre-orders for the iPhone 12 started on October 16, 2020,
-          and the phone became available in most countries on October 23, 2020.
-          Pre-orders for the iPhone 12 Mini began on November 6, 2020, and the
-          phone became available on November 13, 2020.
-        </p>
-        <h3>Product Variants Available</h3>
-        <div class="PrcingList">
-          <div class="PrcingList-row">
-            <ul class="pricing-row pricingdetails">
-              <li class="pricingdetails-star"><strong>Color</strong></li>
-              <li class="pricingdetails-title"><strong>Variant</strong></li>
-              <li class="pricingdetails-track"><strong>Stocks left</strong></li>
-              <li class="pricingdetails-time">
-                <strong>Delivery Date</strong>
-              </li>
-            </ul>
-            <ul class="pricing-row pricing-row-even">
-              <li class="stocksleft-li">
-                <span class="color bluePhone"></span>
-              </li>
-              <li class="totalpieces-li">iPhone 12 128 GB</li>
-              <li class="stocksleftcount">8</li>
-              <li class="DeliveryDate">2021-07-10</li>
-            </ul>
-            <ul class="pricing-row">
-              <li class="stocksleft-li">
-                <span class="color blackPhone"></span>
-              </li>
-              <li class="totalpieces-li">iPhone 12 64 GB</li>
-              <li class="stocksleftcount"><span class="null">0</span></li>
-              <li class="DeliveryDate"><span class="null">0</span></li>
-            </ul>
-            <ul class="pricing-row pricing-row-even">
-              <li class="stocksleft-li">
-                <span class="color redPhone"></span>
-              </li>
-              <li class="totalpieces-li">iPhone 12 256 GB</li>
-              <li class="stocksleftcount">4</li>
-              <li class="DeliveryDate">2021-07-20</li>
-            </ul>
-            <ul class="pricing-row">
-              <li class="stocksleft-li">
-                <span class="color purplePhone"></span>
-              </li>
-              <li class="totalpieces-li">iPhone 12 64 GB</li>
-              <li class="stocksleftcount">12</li>
-              <li class="DeliveryDate">2021-07-20</li>
-            </ul>
-          </div>
+          <h1>$ 979</h1>
+          <p class="productDescription">
+            The iPhone 12 and iPhone 12 Mini (stylized and marketed as iPhone 12
+            mini) are a range of smartphones designed, developed, and marketed by
+            Apple Inc. They are the fourteenth-generation, lower-priced iPhones,
+            succeeding the iPhone 11. They were unveiled at a virtually held Apple
+            Special Event at Apple Park in Cupertino, California on October 13,
+            2020, alongside the higher-end iPhone 12 Pro and iPhone 12 Pro Max
+            flagships. Pre-orders for the iPhone 12 started on October 16, 2020,
+            and the phone became available in most countries on October 23, 2020.
+            Pre-orders for the iPhone 12 Mini began on November 6, 2020, and the
+            phone became available on November 13, 2020.
+          </p>
+          <h3>Product Variants Available</h3>
+          <div class="PrcingList">
+            <div class="PrcingList-row">
+              <ul class="pricing-row pricingdetails">
+                <li class="pricingdetails-star"><strong>Color</strong></li>
+                <li class="pricingdetails-title"><strong>Variant</strong></li>
+                <li class="pricingdetails-track"><strong>Stocks left</strong></li>
+                <li class="pricingdetails-time">
+                  <strong>Delivery Date</strong>
+                </li>
+              </ul>
+              <ul class="pricing-row pricing-row-even">
+                <li class="stocksleft-li">
+                  <span class="color bluePhone"></span>
+                </li>
+                <li class="totalpieces-li">iPhone 12 128 GB</li>
+                <li class="stocksleftcount">8</li>
+                <li class="DeliveryDate">2021-07-10</li>
+              </ul>
+              <ul class="pricing-row">
+                <li class="stocksleft-li">
+                  <span class="color blackPhone"></span>
+                </li>
+                <li class="totalpieces-li">iPhone 12 64 GB</li>
+                <li class="stocksleftcount"><span class="null">0</span></li>
+                <li class="DeliveryDate"><span class="null">0</span></li>
+              </ul>
+              <ul class="pricing-row pricing-row-even">
+                <li class="stocksleft-li">
+                  <span class="color redPhone"></span>
+                </li>
+                <li class="totalpieces-li">iPhone 12 256 GB</li>
+                <li class="stocksleftcount">4</li>
+                <li class="DeliveryDate">2021-07-20</li>
+              </ul>
+              <ul class="pricing-row">
+                <li class="stocksleft-li">
+                  <span class="color purplePhone"></span>
+                </li>
+                <li class="totalpieces-li">iPhone 12 64 GB</li>
+                <li class="stocksleftcount">12</li>
+                <li class="DeliveryDate">2021-07-20</li>
+              </ul>
+            </div>
         </div>
         <h3>Specifications</h3>
         <div class="Specifications">
@@ -391,69 +396,124 @@
         <h3>Customer Reviews</h3>
         <div class="items">
           <div class="card">
-              <div class="card-body">
-                  <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
-                  <div class="profile-picture"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
-                  <div class="template-demo">
-                    <h4 class="cust-name">Ashwin Kumar</h4>
-                      <p>Online reviews can make or break a customer's decision to make a purchase. Read about these customer review sites where your customers'</p>
-                  </div>
-              </div>
-          </div>
-          <div class="card">
             <div class="card-body">
                 <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
-                <div class="profile-picture"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
+                <div class="profile-picture"> <img class="profile-pic" src="images/Ashwin_dp.jpg"> </div>
                 <div class="template-demo">
-                  <h4 class="cust-name">Sanjana Surendran</h4>
+                  <h4 class="cust-name">Ashwin Kumar</h4>
                     <p>Online reviews can make or break a customer's decision to make a purchase. Read about these customer review sites where your customers'</p>
                 </div>
-            </div>     
+            </div>
         </div>
         <div class="card">
           <div class="card-body">
               <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
               <div class="profile-picture"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
               <div class="template-demo">
-                <h4 class="cust-name">Ishwarya Vijaykrishnan</h4>
+                <h4 class="cust-name">Sanjana Surendran</h4>
                   <p>Online reviews can make or break a customer's decision to make a purchase. Read about these customer review sites where your customers'</p>
               </div>
-          </div>
+          </div>     
       </div>
       <div class="card">
         <div class="card-body">
             <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
             <div class="profile-picture"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
             <div class="template-demo">
-              <h4 class="cust-name">John Doe</h4>
+              <h4 class="cust-name">Ishwarya Vijaykrishnan</h4>
                 <p>Online reviews can make or break a customer's decision to make a purchase. Read about these customer review sites where your customers'</p>
             </div>
         </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+          <h4 class="card-title"><img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"></h4>
+          <div class="profile-picture"> <img class="profile-pic" src="https://img.icons8.com/bubbles/100/000000/edit-user.png"> </div>
+          <div class="template-demo">
+            <h4 class="cust-name">John Doe</h4>
+              <p>Online reviews can make or break a customer's decision to make a purchase. Read about these customer review sites where your customers'</p>
+          </div>
       </div>
     </div>
-    <div>
-      <h3>Related Products</h3>
-      <div class="relatedItems">
-        <div class="product-card">
-          <div class="badge">Hot</div>
-          <div class="product-tumb">
-            <img src="https://i.imgur.com/xdbHo4E.png" alt="">
-          </div>
-          <div class="product-details">
-            <span class="product-catagory">Women,bag</span>
-            <h4><a href="">Women leather bag</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-            <div class="product-bottom-details">
-              <div class="product-price"><small>$96.00</small>$230.99</div>
-              <div class="product-links">
-                <a href=""><i class="fa fa-heart"></i></a>
-                <a href=""><i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <div id="RelatedItems">
+          <h3>Related Products</h3>
+          <div class="relatedItems">
+            <div class="product-card">
+              <div class="badge">Best Seller</div>
+              <div class="product-tumb">
+                <img src="images/iphone_wallpaper.jpg" alt="Iphone 11">
+              </div>
+              <div class="product-details">
+                <span class="product-catagory">SmartPhones</span>
+                <h4><a href="">Iphone 11</a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>$96.00</small>$230.99</div>
+                  <div class="product-links">
+                    <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+            <div class="product-card">
+              <div class="product-tumb">
+                <img src="images/iphone_wallpaper_1.jpg" alt="Airpods">
+              </div>
+              <div class="product-details">
+                <span class="product-catagory">SmartPhones</span>
+                <h4><a href="">Airpods</a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>$96.00</small>$230.99</div>
+                  <div class="product-links">
+                    <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-tumb">
+                <img src="images/iphone_wallpaper_1.jpg" alt="Iphone 11">
+              </div>
+              <div class="product-details">
+                <span class="product-catagory">SmartPhones</span>
+                <h4><a href="">Airpods</a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>$96.00</small>$230.99</div>
+                  <div class="product-links">
+                    <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="badge">BestSeller</div>
+              <div class="product-tumb">
+                <img src="images/iphone_wallpaper.jpg" alt="Airpods">
+              </div>
+              <div class="product-details">
+                <span class="product-catagory">SmartPhones</span>
+                <h4><a href="">Iphone 11</a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>$96.00</small>$230.99</div>
+                  <div class="product-links">
+                    <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>           
     </div>
+    </div>
+    </div>
+    
     
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
@@ -470,17 +530,6 @@
           }
           $("#productPreview").html(HTML);
         });
-      });
-
-      $(window).scroll(function (e) {
-        var $el = $(".productGallery");
-        var isPositionFixed = $el.css("position") == "fixed";
-        if ($(this).scrollTop() > 300 && !isPositionFixed) {
-          $el.css({ position: "fixed", top: "0px" });
-        }
-        if ($(this).scrollTop() < 300 && isPositionFixed) {
-          $el.css({ position: "fixed", top: "143px" });
-        }
       });
     </script>
   </body>

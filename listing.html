@@ -6,31 +6,65 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Phonesta_Displaypage</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/listing.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
 </head>
 
 <body>
-    <div id="wrapper">
+   
         <header>
-            <img id="logo" src="Logo/phonesta_logo.png" alt="PHONESTA">
-            <div id="search">
-                <input type="text" placeholder="Search" maxlength="100">
-            </div>
-            <button type="submit" id="login" name="login">LOGIN</button>
-        </header>
-        <nav>
-            <ul id="menu">
-                <li>BRANDS</li>
-                <li><a href="emi.html">EMI</a></li>
-                <li>TRACK ORDERS</li>
-                <li>CONTACT</li>
-                <li>CART</li>
-            </ul>
-        </nav>
-
+            <nav class="navbar">
+              <div class="LogoWrapper">
+                <a href="/">Phonesta</a>
+              </div>
+              <div class="SearchBarWrapper desktop">
+                <div class="searchBar">
+                <input type="text" placeholder="search mobiles" />
+                <div class="SearchBtn"><i class="fas fa-search"></i></div>
+               </div>
+               <div class="ButtonWrapper">
+                 <button class="Phonestabtn"><i class="fas fa-shopping-cart" style="margin-top: 3px;"></i></button>
+                 <button class="Phonestabtn"><i class="fas fa-sign-in-alt" style="margin-top: 3px;"></i></i></button>
+                </div>
+              </div>
+               <!-- Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect from www.flaticon.com -->
+               <img src="/images/hamburger.png" alt="Menu" class="mobile hamburger" />
+               <!-- Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect from www.flaticon.com -->
+            </nav>
+            <nav>
+                <ul id="menu">
+                    <li><a href="emi.html">BRANDS</a>
+                        <ul class="nestedMenu">
+                          <li><a href="">Oneplus</a></li>
+                          <li><a href="">Xiaomi</a></li>
+                          <li><a href="">Samsung</a></li>
+                          <li><a href="">POCO</a></li>
+                          <li><a href="">Oppo</a></li>
+                          <li><a href="">Apple</a></li>
+                          <li><a href="">Realme</a></li>
+                          <li><a href="">Micromax</a></li>
+                          <li><a href="">Motorola</a></li>
+                          <li><a href="">Infinix</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="emi.html">EMI</a></li>
+                    <li><a href="emi.html">TRACK ORDERS</a></li>
+                    <li><a href="emi.html">CONTACT</a></li>
+                    <li><a href="emi.html">CART</a></li>
+                </ul>   
+            </nav>       
+          </header>
+          <div id="wrapper">
         <main>
             <div id="Header_TotalProducts">
                 <div id="Header_Txt">
@@ -857,7 +891,7 @@ Oreo
                 <div class="Flexcolumn" style="background-color:#ececec;">
                     <div id="gallery">
                         <div id="Desc1" class="phoneprice">
-                            <img src="Images_Listing/img1.jpg" width="200" height="250" alt="Honor Mobile Phone"></img>
+                            <img src="images/Images_Listing/img1.jpg" width="200" height="250" alt="Honor Mobile Phone"></img>
                             <div class="product-info">
 
                                 <p> Honor<br> Honor Galaxy A22 128 GB<br> 6 GB RAM, Dual SIM 5G<br>&#x20b9 13,678<br>
@@ -867,7 +901,7 @@ Oreo
                         </div>
 
                         <div id="Desc2" class="phoneprice">
-                            <img src="Images_Listing/img2.jpg" width="200" height="250" alt="Redmi Mobile Phone"></img>
+                            <img src="images/Images_Listing/img2.jpg" width="200" height="250" alt="Redmi Mobile Phone"></img>
                             <div class="product-info">
                                 <p> Redmi<br> Redmi Note5 PRO 64 GB<br> 4 GB RAM, Dual SIM 4G<br>&#x20b9 14,978<br>
                                     <button class="ratingbutton">4.2 <span class="fa fa-star checked"></span></button><br>
@@ -877,7 +911,7 @@ Oreo
 
 
                         <div id="Desc3" class="phoneprice">
-                            <img src="Images_Listing/img3.jpg" width="200" height="250" alt="Vivo Mobile Phone"></img>
+                            <img src="images/Images_Listing/img3.jpg" width="200" height="250" alt="Vivo Mobile Phone"></img>
                             <div class="product-info">
                                 <p>Vivo<br> Y91i Smart Phone 32 GB<br>2 GB RAM, Dual SIM 4G<br>&#x20b9 11,678<br>
                                     <button class="ratingbutton">4.0 <span class="fa fa-star checked"></span></button><br>
@@ -885,7 +919,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc4" class="phoneprice">
-                            <img src="Images_Listing/img7.jpg" width="200" height="250" alt="Vivo Mobile Phone"></img>
+                            <img src="images/Images_Listing/img7.jpg" width="200" height="250" alt="Vivo Mobile Phone"></img>
                             <div class="product-info">
                                 <p>Vivo<br> V9 Pro-1 Smart Phone 64 GB<br>4 GB RAM, Dual SIM 4G<br>&#x20b9 14,678<br>
                                     <button class="ratingbutton">4.2 <span class="fa fa-star checked"></span></button><br>
@@ -893,7 +927,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc5" class="phoneprice">
-                            <img src="Images_Listing/img5.jpg" width="200" height="250" alt="Oneplus Mobile Phone"></img>
+                            <img src="images/Images_Listing/img5.jpg" width="200" height="250" alt="Oneplus Mobile Phone"></img>
                             <div class="product-info">
                                 <p>One Plus<br>OnePlus Nord CE 5G<br>8 GB RAM, Dual SIM 4G<br>&#x20b9 24,999.00<br>
                                     <button class="ratingbutton">4.2 <span class="fa fa-star checked"></span></button><br>
@@ -901,7 +935,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc6" class="phoneprice">
-                            <img src="Images_Listing/img6.jpg" width="200" height="250" alt="Oppo Mobile Phone"></img>
+                            <img src="images/Images_Listing/img6.jpg" width="200" height="250" alt="Oppo Mobile Phone"></img>
                             <div class="product-info">
                                 <p>Oppo<br>Oppo F19<br>6GB RAM, 128GB Storage<br>&#x20b9 18,990.00<br>
                                     <button class="ratingbutton">4.4 <span class="fa fa-star checked"></span></button><br>
@@ -909,7 +943,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc7" class="phoneprice">
-                            <img src="Images_Listing/img8.jpg" width="200" height="250" alt="MI Mobile Phone"></img>
+                            <img src="images/Images_Listing/img8.jpg" width="200" height="250" alt="MI Mobile Phone"></img>
                             <div class="product-info">
                                 <p>MI<br>Mi 11X 5G Celestial<br>6GB RAM 128GB ROM<br>&#x20b9 29,999.00<br>
                                     <button class="ratingbutton">3.2 <span class="fa fa-star checked"></span></button><br>
@@ -917,7 +951,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc8" class="phoneprice">
-                            <img src="Images_Listing/img9.jpg" width="200" height="250" alt="Vivo Mobile Phone"></img>
+                            <img src="images/Images_Listing/img9.jpg" width="200" height="250" alt="Vivo Mobile Phone"></img>
                             <div class="product-info">
                                 <p>Vivo<br>Vivo Y51A<br>8GB, 128GB Storage<br>&#x20b9 17,990.00<br>
                                     <button class="ratingbutton">4.2 <span class="fa fa-star checked"></span></button><br>
@@ -925,7 +959,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc9" class="phoneprice">
-                            <img src="Images_Listing/img10.jpg" width="200" height="250" alt="Redmi Mobile Phone"></img>
+                            <img src="images/Images_Listing/img10.jpg" width="200" height="250" alt="Redmi Mobile Phone"></img>
                             <div class="product-info">
                                 <p>Redmi<br>Redmi Note 10<br>4GB RAM, 64GB Storage<br>&#x20b9 13,499.00<br>
                                     <button class="ratingbutton">3.5 <span class="fa fa-star checked"></span></button><br>
@@ -933,7 +967,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc10" class="phoneprice">
-                            <img src="Images_Listing/img11.jpg" width="200" height="250" alt="Iphone Mobile Phone"></img>
+                            <img src="images/Images_Listing/img11.jpg" width="200" height="250" alt="Iphone Mobile Phone"></img>
                             <div class="product-info">
                                 <p>Iphone<br>New Apple iPhone XR<br>4GB RAM, 64GB Storage<br>&#x20b9 42,999.00<br>
                                     <button class="ratingbutton">4.3 <span class="fa fa-star checked"></span></button><br>
@@ -941,7 +975,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc11" class="phoneprice">
-                            <img src="Images_Listing/img12.jpg" width="200" height="250" alt="Iphone Mobile Phone"></img>
+                            <img src="images/Images_Listing/img12.jpg" width="200" height="250" alt="Iphone Mobile Phone"></img>
                             <div class="product-info">
                                 <p>Iphone<br>New Apple iPhone 12<br>4GB RAM, 64GB Storage<br>&#x20b9 72,900.00<br>
                                     <button class="ratingbutton">4.3 <span class="fa fa-star checked"></span></button><br>
@@ -949,7 +983,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc12" class="phoneprice">
-                            <img src="Images_Listing/img13.jpg" width="200" height="250" alt="Nokia Mobile Phone"></img>
+                            <img src="images/Images_Listing/img13.jpg" width="200" height="250" alt="Nokia Mobile Phone"></img>
                             <div class="product-info">
                                 <p>Iphone<br>New Apple iPhone 12 Mini<br>4GB RAM, 64GB Storage<br>&#x20b9 52,900.00<br>
                                     <button class="ratingbutton">4.4 <span class="fa fa-star checked"></span></button><br>
@@ -957,7 +991,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc13" class="phoneprice">
-                            <img src="Images_Listing/img14.jpg" width="200" height="250" alt="Samsung Mobile Phone"></img>
+                            <img src="images/Images_Listing/img14.jpg" width="200" height="250" alt="Samsung Mobile Phone"></img>
                             <div class="product-info">
                                 <p>Nokia<br>Nokia G20 Smartphone<br>4GB RAM, 64GB Storage<br>&#x20b9 12,990.00<br>
                                     <button class="ratingbutton">4.4 <span class="fa fa-star checked"></span></button><br>
@@ -965,7 +999,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc14" class="phoneprice">
-                            <img src="Images_Listing/img16.jpg" width="200" height="250" alt="Samsung Mobile Phone"></img>
+                            <img src="images/Images_Listing/img16.jpg" width="200" height="250" alt="Samsung Mobile Phone"></img>
                             <div class="product-info">
                                 <p>Samsung<br>Samsung Galaxy M12<br>4GB RAM, 64GB Storage<br>&#x20b9 10,999.00<br>
                                     <button class="ratingbutton">3.1 <span class="fa fa-star checked"></span></button><br>
@@ -973,7 +1007,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc15" class="phoneprice">
-                            <img src="Images_Listing/img17.jpg" width="200" height="250" alt="Vivo Mobile Phone"></img>
+                            <img src="images/Images_Listing/img17.jpg" width="200" height="250" alt="Vivo Mobile Phone"></img>
                             <div class="product-info">
                                 <p>Samsung<br>Samsung Galaxy M11<br>4GB RAM, 64GB Storage<br>&#x20b9 10,499.00<br>
                                     <button class="ratingbutton">3.5 <span class="fa fa-star checked"></span></button><br>
@@ -981,7 +1015,7 @@ Oreo
                             </div>
                         </div>
                         <div id="Desc16" class="phoneprice">
-                            <img src="Images_Listing/Samsung_15.jpg" width="200" height="250" alt="Samsung Mobile Phone"></img>
+                            <img src="images/Images_Listing/Samsung_15.jpg" width="200" height="250" alt="Samsung Mobile Phone"></img>
                             <div class="product-info">
                                 <p>Vivo<br>Vivo Y61A<br>8GB, 128GB Storage<br>&#x20b9 17,990.00<br>
                                     <button class="ratingbutton">4.1 <span class="fa fa-star checked"></span></button><br>
@@ -1016,6 +1050,7 @@ Oreo
             </div>
 
         </main>
+    </div>
         <footer>
             <section id="phonesta">
                 <a href="#">About us</a>
@@ -1047,10 +1082,10 @@ Oreo
             </section>
             <p id="copyright">&copy;Phonesta | All Right reserved</p>
         </footer>
-    </div>
+   
 
 
 </body>
-<link rel='stylesheet' type='text/css' media='screen' href='Css/Phonesta.css'>
+
 <script src='Js/phonesta.js'></script>
 </html>

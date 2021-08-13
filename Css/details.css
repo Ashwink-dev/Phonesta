@@ -1,80 +1,3 @@
-/* Common Styles starts here */
-
-/* Custom ScrollBar CSS */
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-.thumbnails::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.1);
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.4);
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: rgba(0, 0, 0, 0.9);
-}
-
-@font-face {
-  font-family: Logo;
-  src: url(../fonts/BebasNeue-Regular.ttf);
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-}
-
-h2 {
-  margin: 0;
-}
-
-header {
-  background-color: #1f2833;
-  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
-  height: 72px;
-  overflow: hidden;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.LogoWrapper {
-  max-width: 240px;
-  display: inherit;
-  justify-content: inherit;
-  padding: 4px;
-}
-
-.navbar>.LogoWrapper>a {
-  font-size: 35px;
-  margin: 0;
-  margin-left: 0;
-  line-height: 67px;
-  color: #ffffff;
-  font-weight: 600;
-  font-family: 'Logo';
-}
-
-/* Common Styles ends here */
-
 #details.wrapper {
   display: block;
   width: 93%;
@@ -83,20 +6,22 @@ a {
   min-width: 1251px;
   max-width: 1483px;
   margin-top: 45px;
-  
 }
 
 #details .productGallery {
   grid-column: 1 / 2;
   position: fixed;
-  top: 143px;
+  top: 180px;
   width: 30%;
 }
 
 #details .productDetails {
   padding: 0 10px;
-  float: right;
-  width: 65%;
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
 }
 
 .productGallery .flexWrapper {
@@ -144,30 +69,6 @@ a {
   border: 2px solid #1a47ea;
 }
 
-.SearchBar {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex: auto;
-  -ms-flex: auto;
-  flex: auto;
-  border-radius: 2px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
-}
-
-nav {
-  margin: 0 auto;
-  width: 83%;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 1200px;
-  max-width: 1480px;
-}
-
 .btnprimary {
   padding: 18px 8px;
   border-radius: 2px;
@@ -206,18 +107,17 @@ nav {
   color: orange;
 }
 
-
- .badgeWrapper {
+.badgeWrapper {
   margin: 7px 0;
- }
+}
 
- #productPreview {
+#productPreview {
   width: 68%;
   text-align: center;
   max-height: 65vh;
- }
+}
 
- .PhonestaBadge {
+.PhonestaBadge {
   background-color: #1f2833;
   padding: 4px;
   margin: 5px 0;
@@ -227,46 +127,52 @@ nav {
   color: #fff;
   border-radius: 4px;
   font-weight: 400;
- }
+}
 
- .productDescription {
+.productDescription {
   font-weight: 500;
   text-align: justify;
   line-height: 23px;
- }
+}
 
 .PrcingList {
   background-color: #f9f9f9;
 }
+
 .PrcingList-row {
-  margin:0;
+  margin: 0;
   padding: 10px 0;
   list-style: none;
 }
+
 .pricing-row:after {
   content: '';
   display: table;
-  clear:both;
+  clear: both;
 }
+
 .pricing-row-even {
   background-color: #e3e3e3;
 }
+
 .pricing-row li {
-  display:inline-block;
+  display: inline-block;
   vertical-align: top;
   float: left;
   line-height: 45px;
 }
+
 .pricingdetails {
   text-align: center;
   padding: 20px 40px;
 }
-.stocksleft-li, .stocksleftcount, .DeliveryDate,
-.pricingdetails-star, .pricingdetails-track, .pricingdetails-time{
+
+.stocksleft-li, .stocksleftcount, .DeliveryDate, .pricingdetails-star, .pricingdetails-track, .pricingdetails-time {
   min-width: 54px;
   text-align: center;
   width: 16%;
 }
+
 .totalpieces-li {
   width: 40%;
   min-width: 160px;
@@ -275,15 +181,18 @@ nav {
   padding-top: 3px;
   text-align: center;
 }
+
 .pricingdetails-title {
   width: 40%;
   min-width: 160px;
 }
+
 .guiz-awards-subtitle {
   color: #858585;
   font-size: 14px;
   font-weight: 300;
 }
+
 .stocksleftcount, .DeliveryDate {
   width: 22%;
   min-width: 80px;
@@ -291,34 +200,41 @@ nav {
   line-height: 45px;
   font-family: 'Roboto', sans-serif;
 }
+
 .pricingdetails-track, .pricingdetails-time {
   width: 22%;
   min-width: 80px;
 }
+
 .stocksleftcount .null, .DeliveryDate .null {
-  color:#bababa;
+  color: #bababa;
 }
+
 .color {
-  display:block;
+  display: block;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 2px solid #bdc2c1;
-  background: #d6d6d6;  
+  background: #d6d6d6;
   margin: 0 auto;
 }
+
 .bluePhone {
   border-color: #033357;
-  background: #033357;  
+  background: #033357;
 }
+
 .blackPhone {
   border-color: #1c1b21;
-  background: #1c1b21;  
+  background: #1c1b21;
 }
+
 .redPhone {
   border-color: #e13738;
-  background: #e13738;  
+  background: #e13738;
 }
+
 .purplePhone {
   border-color: #aea5dc;
   background-color: #aea5dc;
@@ -335,7 +251,6 @@ nav {
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
 
-
 .Specifications input {
   position: absolute;
   opacity: 0;
@@ -347,6 +262,7 @@ nav {
   color: white;
   overflow: hidden;
 }
+
 .specification-label {
   display: flex;
   justify-content: space-between;
@@ -356,9 +272,11 @@ nav {
   cursor: pointer;
   color: #ffffff;
 }
+
 .specification-label:hover {
   background: #1a252f;
 }
+
 .specification-label::after {
   content: "❯";
   width: 1em;
@@ -366,6 +284,7 @@ nav {
   text-align: center;
   transition: all 0.35s;
 }
+
 .specification-content {
   max-height: 0;
   padding: 0 1em;
@@ -373,6 +292,7 @@ nav {
   background: white;
   transition: all 0.35s;
 }
+
 .specification-close {
   display: flex;
   justify-content: flex-end;
@@ -381,17 +301,20 @@ nav {
   background: #2c3e50;
   cursor: pointer;
 }
+
 .specification-close:hover {
   background: #1a252f;
 }
 
-.Specifications input:checked + .specification-label {
+.Specifications input:checked+.specification-label {
   background: #1a252f;
 }
-.Specifications input:checked + .specification-label::after {
+
+.Specifications input:checked+.specification-label::after {
   transform: rotate(90deg);
 }
-.Specifications input:checked ~ .specification-content {
+
+.Specifications input:checked~.specification-content {
   max-height: 100vh;
   padding: 1em;
 }
@@ -401,18 +324,18 @@ nav {
   padding: 10px 0;
 }
 
-.specs > dt {
+.specs>dt {
   width: 25%;
 }
 
-.specs > dd {
+.specs>dd {
   width: 70%;
 }
 
 #details .card {
   position: relative;
   display: flex;
-  width: 400px;
+  width: 47%;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
@@ -424,6 +347,7 @@ nav {
   -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
   box-shadow: 0px 0px 5px 0px rgb(161, 163, 164);
   margin-bottom: 18px;
+  margin-right: 12px;
 }
 
 #details .card .card-body {
@@ -442,7 +366,9 @@ nav {
 }
 
 #details .profile-pic {
-  width: 58px
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
 }
 
 #details .cust-name {
@@ -472,12 +398,11 @@ nav {
   right: 30px;
 }
 
-
 .relatedItems .product-card {
-  width: 380px;
+  width: 400px;
   position: relative;
   box-shadow: 0 2px 7px #dfdfdf;
-  margin: 50px auto;
+  margin: 10px 5px;
   background: #fafafa;
 }
 
@@ -497,18 +422,19 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
-  padding: 50px;
+  height: 45%;
+  padding: 0px;
   background: #f0f0f0;
 }
 
 .relatedItems .product-tumb img {
   max-width: 100%;
   max-height: 100%;
+  width: 100%;
 }
 
 .relatedItems .product-details {
-  padding: 30px;
+  padding: 22px;
 }
 
 .relatedItems .product-catagory {
@@ -581,3 +507,111 @@ nav {
 .product-links a:hover {
   color: #fbb72c;
 }
+
+.detailsWrapper {
+  width: 66%;
+}
+
+.relatedItems {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mobile {
+  display: none !important;
+}
+.desktop {
+  display: inherit !important;
+}
+
+/* Media Queries Starts Here */
+@media only screen and (max-width: 1250px) {
+  .mobile {
+    display: inherit !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+  #details.wrapper {
+    width: 93%;
+    min-width: auto;
+    max-width: max-content;
+    margin-top: 45px;
+  }
+  #details .productGallery {
+    position: static;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+    min-width: 415px;
+  }
+
+  #details .productDetails {
+    padding: 0 10px;
+    float: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #productPreview {
+    max-height: 95vh;
+  }
+
+  .productGallery .flexWrapper {
+    flex-direction: column-reverse;
+  }
+   
+  #productPreview {
+    margin: 0 auto;
+  }
+
+  .productGallery .flexWrapper {
+    border: 2px solid #f0f0f0;
+  }
+
+  #productPreview {
+    max-height: max-content;
+    height: 58vh;
+  }
+
+  .thumbnails {
+    flex-direction: row;
+  }
+
+  .thumbnails li {
+    margin-right: 25px;
+    margin-left: 5px;
+  }
+
+  .detailsWrapper {
+    width: 95%;
+    text-align: center;
+  }
+
+  .PhonestaBadge {
+    margin: 15px auto;
+  }
+
+  #details .items {
+    justify-content: center;
+  }
+
+  #details .card {
+    width: 100%;
+  }
+
+  .specs {
+    text-align: left;
+  }
+
+  .relatedItems {
+    justify-content: center;
+  }
+
+  #details .items {
+    justify-content: flex-start;
+  }
+
+}
+/* Media Queries Ends Here */

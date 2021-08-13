@@ -5,28 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="sanju.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Phonesta</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sanju.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Phonesta:: Homepage</title>
 </head>
 
 <body id="grid">
     <header>
-        <a href="#"><img id="logo" src="phonesta_logo.png" alt="PHONESTA"></a>
-        <div id="search">
-            <input type="text" name="text" class="search" placeholder="Search here!">
-            <button type="submit" class="login" name="login" ><i class="fas fa-search"></i></i></button>
-        </div>
-        <div id="login">
-        <button type="submit" id="cart" name="login" ><i class="fas fa-shopping-cart"></i></button>
-        <button type="submit" class="login" name="login" ><i class="fas fa-sign-in-alt"></i></button>
-        </div>
-    </header>
+        <nav class="navbar">
+          <div class="LogoWrapper">
+            <a href="/">Phonesta</a>
+          </div>
+          <div class="SearchBarWrapper desktop">
+            <div class="searchBar">
+            <input type="text" placeholder="search mobiles" />
+            <div class="SearchBtn"><i class="fas fa-search"></i></div>
+           </div>
+           <div class="ButtonWrapper">
+             <button class="Phonestabtn"><i class="fas fa-shopping-cart" style="margin-top: 3px;"></i></button>
+             <button class="Phonestabtn"><i class="fas fa-sign-in-alt" style="margin-top: 3px;"></i></i></button>
+            </div>
+          </div>
+           <!-- Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect from www.flaticon.com -->
+           <img src="/images/hamburger.png" alt="Menu" class="mobile hamburger" />
+           <!-- Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect from www.flaticon.com -->
+        </nav>
         <nav>
             <ul id="menu">
                 <li><a href="emi.html">BRANDS</a>
-                    <ul>
+                    <ul class="nestedMenu">
                       <li><a href="">Oneplus</a></li>
                       <li><a href="">Xiaomi</a></li>
                       <li><a href="">Samsung</a></li>
@@ -44,7 +59,9 @@
                 <li><a href="emi.html">CONTACT</a></li>
                 <li><a href="emi.html">CART</a></li>
             </ul>   
-        </nav>  
+        </nav>       
+      </header>
+       
     <main>
         </div>
         <ul id="slideshow">
