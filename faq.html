@@ -4,10 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phonesta:: FAQ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <title>Phonesta:: FAQ</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+          <div class="LogoWrapper">
+            <a href="/">Phonesta</a>
+          </div>
+          <div class="SearchBarWrapper desktop">
+            <div class="searchBar">
+            <input type="text" placeholder="search mobiles" />
+            <div class="SearchBtn"><i class="fas fa-search"></i></div>
+           </div>
+           <div class="ButtonWrapper">
+             <button class="Phonestabtn"><i class="fas fa-shopping-cart" style="margin-top: 3px;"></i></button>
+             <button class="Phonestabtn"><i class="fas fa-sign-in-alt" style="margin-top: 3px;"></i></i></button>
+            </div>
+          </div>
+           <!-- Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect from www.flaticon.com -->
+           <img src="/images/hamburger.png" alt="Menu" class="mobile hamburger details" />
+           <!-- Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect from www.flaticon.com -->
+          </nav>
+           <nav class="desktop">
+            <ul id="menu">
+                <li><a href="listing.html">BRANDS</a>
+                    <ul class="nestedMenu">
+                      <li><a href="listing.html">Oneplus</a></li>
+                      <li><a href="listing.html">Xiaomi</a></li>
+                      <li><a href="listing.html">Samsung</a></li>
+                      <li><a href="listing.html">POCO</a></li>
+                      <li><a href="listing.html">Oppo</a></li>
+                      <li><a href="listing.html">Apple</a></li>
+                      <li><a href="listing.html">Realme</a></li>
+                      <li><a href="listing.html">Micromax</a></li>
+                      <li><a href="listing.html">Motorola</a></li>
+                      <li><a href="listing.html">Infinix</a></li>
+                    </ul>
+                </li>
+                <li><a href="emi.html">EMI</a></li>
+                <li><a href="#">TRACK ORDERS</a></li>
+                <li><a href="Contactus.html">CONTACT</a></li>
+                <li><a href="#">CART</a></li>
+            </ul>   
+        </nav>       
+      </header>
+      <div id="FAQ" class="wrapper">
+      <h1>Frequently Asked Questions</h1>
+      <div class="Specifications">
+        <div class="specification">
+          <input type="checkbox" id="chck1" checked />
+          <label class="specification-label" for="chck1">Is it safe to exchange phone on Phonesta?</label>
+          <div class="specification-content">
+             Yes, it’s completely safe and easy to exchange phones on Phonesta through the Mobile Exchange offer. The e-commerce will arrange for doorstep pick up of the old phone and deliver the new device. You just have to make sure to provide the same phone that you gave details of and in working condition.
+          </div>
+        </div>
+        <div class="specification">
+          <input type="checkbox" id="chck2" />
+          <label class="specification-label" for="chck2"
+            >Can I exchange with any new phone on Phonesta ?</label
+          >
+          <div class="specification-content">
+            No. Phonesta offers mobile exchange offer only on select products on the website. You will see ‘Buy with exchange’ option on eligible models.
+          </div>
+        </div>
+        <div class="specification">
+          <input type="checkbox" id="chck3" />
+          <label class="specification-label" for="chck3"
+            >How can I deliver the old phone to Phonesta ?</label
+          >
+          <div class="specification-content">
+            You don’t have to ship the old product as Phonesta will arrange for a doorstep pickup of the old device. One of the Phonesta personnel will come and pick the device from your address.
+          </div>
+        </div>
+        <div class="specification">
+          <input type="checkbox" id="chck4" />
+          <label class="specification-label" for="chck4"
+            >Can I exchange more than one device with Phonesta Exchange?</label
+          >
+          <div class="specification-content">
+            No, you can only exchange one device against one purchase. Additionally, you can only exchange the mobile for which you provided details at the time of availing the offer.
+          </div>
+        </div>
+        <div class="specification">
+          <input type="checkbox" id="chck5" />
+          <label class="specification-label" for="chck5"
+            >Will I get the right price for my old device under the Phonesta Exchange offer?</label
+          >
+          <div class="specification-content">
+            Phonesta assures that the exchange offer gives a fair price for the old device. According to the website, its experts have created a pro-rate value against every mobile that can be exchanged on Phonesta.
+          </div>
+        </div>
+      </div>
+    </div>
+      <footer>
+        <section id="phonesta">
+            <a href="#">About us</a>
+            <a href="#">Sell with us</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">SiteMap</a>
+        </section>
+        <section id="user_account">
+            <a href="#">My Account</a>
+            <a href="#">My Orders</a>
+            <a href="#">My Shopping bag</a>
+            <a href="#">My Wishlist</a>
+        </section>
+        <section id="customer_services">
+            <a href="#">Frequently asked questions</a>
+            <a href="#">Cancellation</a>
+            <a href="#">Returns & Refunds</a>
+            <a href="#">EMI Plans</a>
+            <a href="#">Offers and Promotions</a>
+            <a href="#">Contact us</a>
+        </section>
+        <section id="subscribe">
+            <p>Subscribe to our newsletter for immediate update on offers and live sale</p>
+            <form  method="GET">
+                <input type="email" name="email" id="email" placeholder="Please enter email ID"><br>
+                <button type="submit" id="submit">Subscribe</button>
+            </form>
+        </section>
+        <p id="copyright">&copy;Phonesta | All Right reserved</p>
+    </footer>
 </body>
 </html>

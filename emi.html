@@ -7,9 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/emi.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Phonesta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Phonesta:: EMI</title>
 </head>
 
 <body>
@@ -29,10 +34,10 @@
             </div>
           </div>
            <!-- Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect from www.flaticon.com -->
-           <img src="/images/hamburger.png" alt="Menu" class="mobile hamburger" />
+           <img src="/images/hamburger.png" alt="Menu" class="mobile hamburger emi" />
            <!-- Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect from www.flaticon.com -->
         </nav>
-        <nav>
+        <nav class="desktop">
             <ul id="menu">
                 <li><a href="listing.html">BRANDS</a>
                     <ul class="nestedMenu">
@@ -59,13 +64,13 @@
     <p>To make this a No Cost EMI offer, interest amount will be discounted from the price of your order. Total amount you pay to the bank (excluding GST) will be equal to the price of the item. Bank may charge you GST only on the interest amount. Certain tenures are available on no cost EMI only on down payment. Please check EMI plans in payments page for more details.</p>
     <section id="filter">
         
-        <input type="radio" name="bank" id="hdfc" value="hdfc">
+        
         <label for="hdfc">HDFC Bank</label><br> 
         
-        <input type="radio" name="bank" id="icici" value="hdfc" checked>
+        <input type="radio" name="bank" id="icici" value="hdfc">
         <label for="icici">ICICI Bank</label><br>
         
-        <input type="radio" name="bank" id="sbi" value="hdfc">
+        <input type="radio" name="bank" id="sbi" value="hdfc" checked>
         <label for="sbi">SBI Bank</label><br>
         
         <input type="radio" name="bank" id="yes" value="hdfc">
@@ -80,8 +85,9 @@
         <input type="radio" name="bank" id="indusland" value="hdfc">
         <label for="indusland">INDUSLAND Bank</label><br>
         
-        <input type="radio" name="bank" id="citi" value="hdfc">
-        <label for="citi">HDFC Bank</label><br>
+        <input type="radio" name="bank" id="citi" value="citi">
+        <label for="citi">Citi Bank</label><br>
+        <input type="radio" name="bank" id="citi" value="citi">
     </section>
     <table>
       <caption>ICICI Credit Card</caption>
@@ -117,8 +123,8 @@
         </tr>
     </table>
     <section id="ads">
-        <iframe src="https://www.youtube.com/watch?v=cNrpXwLmM5M" title="Iframe Example"></iframe> <br><br>
-        <iframe src="https://www.youtube.com/watch?v=cNrpXwLmM5M" title="Iframe Example"></iframe>
+        <iframe src="https://www.youtube.com/embed/cNrpXwLmM5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br><br>
+        <iframe src="https://www.youtube.com/embed/cNrpXwLmM5M" title="Iframe Example"></iframe>
     </section>
 </main> <br>
   <footer>
@@ -146,7 +152,7 @@
     <section id="subscribe">
         <p>Subscribe to our newsletter for immediate update on offers and live sale</p>
         <form  method="GET">
-            <input type="email" name="email" id="email"><br>
+            <input type="email" name="email" id="email" placeholder="Please enter email ID"><br>
             <button type="submit" id="submit">Subscribe</button>
         </form>
     </section>
