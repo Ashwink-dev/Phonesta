@@ -60,7 +60,7 @@ ul {
     width : 100vw;
 }
 
-#slideshow img{
+#slideshow img, #slideshow picture{
     width : 100vw;
     height: 100vh;
     object-fit: cover;
@@ -240,6 +240,10 @@ ul {
 
     .accessories li {
         padding: 5% 0;
+    }
+    #brands_caption, .caption {
+        padding: 0px;
+        font-size: 2.5em;
     }
 
     #brands_caption, .caption {

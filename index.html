@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/sanju.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -65,26 +65,50 @@
     <main>
         </div>
         <ul id="slideshow">
-                <li><img src="images/slider_1.jpeg" alt="One plus"></li>
-                <li><img src="images/slider_2.jpeg" alt="Samsung"></li>
-                <li><img src="images/slider_3.jpeg" alt="xiaomi"></li>
-                <li><img src="images/slider_4.jpeg" alt="Realme"></li>
+                <li>
+                    <picture id="offer_banner">
+                        <source media="(min-width:768px)" srcset="images/slider_1.jpeg">
+                        <source media="(min-width:465px)" srcset="images/slider_1_medium.png">
+                        <source media="(min-width:350px)" srcset="images/slider_1_small.png">
+                        <img src="images/slider_1.jpeg" alt="One plus">
+                    </picture>
+                </li>
+                <li>
+                    <picture id="offer_banner">
+                        <source media="(min-width:768px)" srcset="images/slider_2.jpeg">
+                        <source media="(min-width:350px)" srcset="images/slider_2_small.png">
+                        <img src="images/slider_2.jpeg" alt="Samsung">
+                    </picture>
+                </li>
+                <li>
+                    <picture id="offer_banner">
+                        <source media="(min-width:768px)" srcset="images/slider_3.jpeg">
+                        <source media="(min-width:350px)" srcset="images/slider_3_small.png">
+                        <img src="images/slider_3.jpeg" alt="xiaomi">
+                    </picture>
+                    </li>
+                <li>
+                    <picture id="offer_banner">
+                        <source media="(min-width:768px)" srcset="images/slider_4.jpeg">
+                        <source media="(min-width:350px)" srcset="images/slider_4_small.png">
+                        <img src="images/slider_4.jpeg" alt="Realme">
+                    </picture></li>
         </ul>  
         </div>
         <p id="brands_caption">Super Duper Brands!</p>
         <ul id="brands">
-            <li id="oneplus">Oneplus<br><p><a href="#" class="shop">Shop Now</a></p></li>
-            <li id="samsung">Samsung<br><p><a href="#" class="shop">Shop Now</a></p></li>
-            <li id="xiaomi">Xiaomi<br><p><a href="#" class="shop">Shop Now</a></p> </li>
-            <li id="apple">Apple<br><p><a href="#" class="shop">Shop Now</a></p></li>
-            <li id="realme">Realme<br><p><a href="#" class="shop">Shop Now</a></p> </li>
-            <li id="oppo">OPPO<br><p><a href="#" class="shop">Shop Now</a></p></li>
-            <li id="micromax">Micromax<br><p><a href="#" class="shop">Shop Now</a></p> </li>
-            <li id="motorola">Motorola<br><p><a href="#" class="shop">Shop Now</a></p></li>
-            <li id="ininix" >Infinix<br><p><a href="#" class="shop">Shop Now</a></p></li>
-            <li id="poco">POCO<br><p><a href="#" class="shop">Shop Now</a></p></li>
-            <li id="ininix" >Nokia<br><p><a href="#" class="shop">Shop Now</a></p></li>
-            <li id="poco">Vivo<br><p><a href="#" class="shop">Shop Now</a></p></li>
+            <li id="oneplus">Oneplus<br><p><a href="listing.html" class="shop">Shop Now</a></p></li>
+            <li id="samsung">Samsung<br><p><a href="listing.html" class="shop">Shop Now</a></p></li>
+            <li id="xiaomi">Xiaomi<br><p><a href="listing.html" class="shop">Shop Now</a></p> </li>
+            <li id="apple">Apple<br><p><a href="listing.html" class="shop">Shop Now</a></p></li>
+            <li id="realme">Realme<br><p><a href="listing.html" class="shop">Shop Now</a></p> </li>
+            <li id="oppo">OPPO<br><p><a href="listing.html" class="shop">Shop Now</a></p></li>
+            <li id="micromax">Micromax<br><p><a href="listing.html" class="shop">Shop Now</a></p> </li>
+            <li id="motorola">Motorola<br><p><a href="listing.html" class="shop">Shop Now</a></p></li>
+            <li id="ininix" >Infinix<br><p><a href="listing.html" class="shop">Shop Now</a></p></li>
+            <li id="poco">POCO<br><p><a href="listing.html" class="shop">Shop Now</a></p></li>
+            <li id="ininix" >Nokia<br><p><a href="listing.html" class="shop">Shop Now</a></p></li>
+            <li id="poco">Vivo<br><p><a href="listing.html" class="shop">Shop Now</a></p></li>
 
 
         </ul>
@@ -135,12 +159,12 @@
             <a href="#">My Wishlist</a>
         </section>
         <section id="customer_services">
-            <a href="#">Frequently asked questions</a>
+            <a href="faq.html">Frequently asked questions</a>
             <a href="#">Cancellation</a>
             <a href="#">Returns & Refunds</a>
-            <a href="#">EMI Plans</a>
+            <a href="emi.html">EMI Plans</a>
             <a href="#">Offers and Promotions</a>
-            <a href="#">Contact us</a>
+            <a href="Contactus.html">Contact us</a>
         </section>
         <section id="subscribe">
             <p>Subscribe to our newsletter for immediate update on offers and live sale</p>
