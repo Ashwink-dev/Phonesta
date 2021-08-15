@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 
 /* Custom ScrollBar CSS */
 
@@ -62,7 +64,7 @@ a {
 
 .hamburger {
   height: 50px;
-  margin-top: 13px;
+  margin-top: 43px;
 }
 
 .mobile {
@@ -84,7 +86,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 30%;
+  width: auto;
 }
 
 .searchBar {
@@ -93,7 +95,7 @@ a {
 }
 
 .searchBar input[type="text"] {
-  height: 26px;
+  height: 28px;
   border-radius: 4px 0px 0px 4px;
   border: 0;
   padding: 1px 6px;
@@ -147,9 +149,14 @@ a {
 header {
   background-color: #1f2833;
   color: #f0f0f0;
-  height: 15vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
+}
+
+nav {
+  grid-area: nav;
+  height: 10vh;
 }
 
 #logo {
@@ -300,6 +307,10 @@ nav ul li ul li:hover {
 #subscribe input {
   text-align: center;
   width: 70%;
+  height: 26px;
+  border-radius: 4px;
+  border: 0;
+  padding: 1px 6px;
 }
 
 #subscribe button {
@@ -308,6 +319,7 @@ nav ul li ul li:hover {
   padding: 10px;
   color: #1f2833;
   background-color: #f0f0f0;
+  border: 0;
 }
 
 footer {
@@ -315,7 +327,8 @@ footer {
   color: aliceblue;
   display: grid;
   grid-template-areas: "sec1 sec2 sec3 sec4" "foot . . .";
-  grid-template-columns: 20vw 20vw 20vw 40vw;
+  grid-template-columns: 20vw 20vw 20vw 35vw;
+  padding: 25px;
 }
 
 footer section a {
@@ -330,6 +343,7 @@ footer section a {
   grid-column: 1/5;
   justify-self: center;
 }
+
 
 @media (max-width:768px) {
   header {
@@ -361,7 +375,7 @@ footer section a {
     grid-template-columns: 100vw;
     margin: 0;
   }
-  #phonesta, #user_account, #customer_services, #subscribe {
+  #phonesta, #user_account, #customer_services {
     margin-left: 10%;
   }
   nav li:hover ul {
@@ -378,20 +392,15 @@ footer section a {
   }
 
   .mobile {
-    display: none !important;
-  }
-  .desktop {
     display: inherit !important;
   }
-
-
-  /* Media Queries Starts Here */
-  @media only screen and (max-width: 1200px) {
-    .mobile {
-      display: inherit !important;
-    }
-    .desktop {
-      display: none !important;
-    }
+  .desktop {
+    display: none !important;
   }
-  /* Media Queries Ends Here */
+  footer {
+    display: block;
+  }
+  #copyright {
+    text-align: center;
+  }
+}

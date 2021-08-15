@@ -7,28 +7,61 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel='stylesheet' type='text/css' media='screen' href='Css/contactus.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/contactus.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script src='Js/contactus.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <img id="logo" src="Logo/phonesta_logo.png" alt="PHONESTA">
-        <div id="search">
-            <input type="text" placeholder="Search" maxlength="100">
-        </div>
-        <button type="submit" id="login" name="login">LOGIN</button>
-    </header>
-    <nav>
-        <ul id="menu">
-            <li>BRANDS</li>
-            <li><a href="emi.html">EMI</a></li>
-            <li>TRACK ORDERS</li>
-            <li>CONTACT</li>
-            <li>CART</li>
-        </ul>
-    </nav>
-    <main>
+        <nav class="navbar">
+          <div class="LogoWrapper">
+            <a href="/">Phonesta</a>
+          </div>
+          <div class="SearchBarWrapper desktop">
+            <div class="searchBar">
+            <input type="text" placeholder="search mobiles" />
+            <div class="SearchBtn"><i class="fas fa-search"></i></div>
+           </div>
+           <div class="ButtonWrapper">
+             <button class="Phonestabtn"><i class="fas fa-shopping-cart" style="margin-top: 3px;"></i></button>
+             <button class="Phonestabtn"><i class="fas fa-sign-in-alt" style="margin-top: 3px;"></i></i></button>
+            </div>
+          </div>
+           <!-- Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect from www.flaticon.com -->
+           <img src="/images/hamburger.png" alt="Menu" class="mobile hamburger contactus" />
+           <!-- Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect from www.flaticon.com -->
+        </nav>
+        <nav class="desktop">
+            <ul id="menu">
+                <li><a href="listing.html">BRANDS</a>
+                    <ul class="nestedMenu">
+                      <li><a href="listing.html">Oneplus</a></li>
+                      <li><a href="listing.html">Xiaomi</a></li>
+                      <li><a href="listing.html">Samsung</a></li>
+                      <li><a href="listing.html">POCO</a></li>
+                      <li><a href="listing.html">Oppo</a></li>
+                      <li><a href="listing.html">Apple</a></li>
+                      <li><a href="listing.html">Realme</a></li>
+                      <li><a href="listing.html">Micromax</a></li>
+                      <li><a href="listing.html">Motorola</a></li>
+                      <li><a href="listing.html">Infinix</a></li>
+                    </ul>
+                </li>
+                <li><a href="emi.html">EMI</a></li>
+                <li><a href="#">TRACK ORDERS</a></li>
+                <li><a href="Contactus.html">CONTACT</a></li>
+                <li><a href="#">CART</a></li>
+            </ul>   
+        </nav>       
+      </header>
+    <main id="wrapper">
         <div class="container">
 
             <h1 class="brand"><span>Contact Us</span></h1>
@@ -57,25 +90,21 @@
                     <ul class="social-media-list">
                         <li>
                             <a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-github" aria-hidden="true"></i></a>
+                                <i class="fab fa-telegram"></i></a>
                         </li>
                         <li>
                             <a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                                <i class="fab fa-facebook"></i></a>
                         </li>
                         <li>
                             <a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <i class="fab fa-twitter" aria-hidden="true"></i></a>
                         </li>
                         <li>
                             <a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <i class="fab fa-instagram" aria-hidden="true"></i></a>
                         </li>
                     </ul>
-
-
-                    <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-
                 </div>
                 <!-- End .company-info -->
 
@@ -167,7 +196,7 @@
         <section id="subscribe">
             <p>Subscribe to our newsletter for immediate update on offers and live sale</p>
             <form method="GET">
-                <input type="email" name="email" id="email"><br>
+                <input type="email" name="email" id="email" placeholder="Please enter email ID"><br>
                 <button type="submit" id="submit">Subscribe</button>
             </form>
         </section>

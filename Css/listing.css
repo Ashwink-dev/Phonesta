@@ -1,110 +1,3 @@
-    * {
-        box-sizing: border-box;
-    }
-    /* home page css */
-    
-    body,
-    footer {
-        margin: 0;
-    }
-    
-    #logo {
-        width: 30vw;
-        object-fit: contain;
-    }
-    
-    #search {
-        width: 35vw;
-        align-self: flex-end;
-        padding-left: 20%;
-    }
-    
-    #login {
-        width: 35vw;
-        align-self: flex-end;
-    }
-    
-    nav {
-        background-color: #1f2833;
-        color: #f0f0f0;
-    }
-    
-    #menu {
-        padding: 1em 0;
-        list-style-type: none;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-content: flex-end;
-    }
-    
-    footer {
-        background-color: #1f2833;
-        color: aliceblue;
-        margin-top: 10%;
-        display: grid;
-        grid-template-areas: "sec1 sec2 sec3 sec4" "foot . . .";
-        grid-template-columns: 20vw 20vw 20vw 40vw;
-    }
-    
-    #phoesta {
-        grid-area: sec1;
-    }
-    
-    #user_account {
-        grid-area: sec1;
-    }
-    
-    #customer_service {
-        grid-area: sec1;
-    }
-    
-    #subscribe {
-        grid-area: sec4;
-        border: 1px solid #f0f0f0;
-        place-self: center;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    #subscribe button {
-        margin-top: 10px;
-        border-radius: 20px;
-        padding: 10px;
-        color: #1f2833;
-        background-color: #f0f0f0;
-    }
-    
-    footer section a {
-        text-decoration: none;
-        color: aliceblue;
-        display: flex;
-        align-items: center;
-        padding: 10px 5px;
-    }
-    
-    #copyright {
-        grid-column: 1/5;
-        justify-self: center;
-    }
-    
-    @media (max-width:768px) {
-        header {
-            height: 15vh;
-            flex-flow: column wrap;
-            padding: 3px;
-        }
-        nav {
-            height: 30vh;
-        }
-        #menu {
-            flex-direction: column;
-            padding: 5px;
-            justify-self: center;
-        }
-    }
-    /* end of home page css */
-    
     #Header {
         color: white;
         background-color: black;
@@ -113,19 +6,19 @@
         height: 128px;
         font-size: 2em;
     }
-    
+
     h1 {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
-    
+
     h2 {
         margin: 0px;
         font-size: inherit;
         font-weight: normal;
     }
-    
+
     #Header_Txt {
         width: 100%;
         height: auto;
@@ -134,7 +27,7 @@
         font-size: 30px;
         text-align: center;
     }
-    
+
     .HeaderFilter {
         width: 100%;
         height: auto;
@@ -144,7 +37,7 @@
         margin: auto;
         text-align: right;
     }
-    
+
     #footerid {
         background-color: black;
         color: white;
@@ -152,24 +45,29 @@
         height: 128px;
         font-size: .6em;
     }
-    
+
     #wrapper {
         background-color: #ececec;
         padding: 0;
+        padding-top: 20px;
     }
-    
+
+    .hamburger.listing {
+        margin-top: 3px;
+    }
+
     .dropbtn {
         color: black;
         padding: 16px;
         font-size: 16px;
         border: none;
     }
-    
+
     .dropdown {
         position: relative;
         display: inline-block;
     }
-    
+
     .dropdown-content {
         display: none;
         position: absolute;
@@ -178,86 +76,97 @@
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
-    
+
     .dropdown-content a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
     }
-    
+
     .dropdown-content a:hover {
         background-color: #ddd;
     }
-    
+
     .dropdown:hover .dropdown-content {
         display: block;
     }
-    
+
     .dropdown:hover .dropbtn {
         background-color: #ddd;
     }
-    
+
     .arrow {
         border: solid black;
         border-width: 0 3px 3px 0;
         display: inline-block;
         padding: 3px;
     }
-    
+
     .down {
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
     }
-    
+
     #content:after {
         content: "";
         display: table;
         clear: both;
     }
-    
+
     .Filtercolumn {
         float: left;
         width: 25%;
         padding: 10px;
     }
-    
+
+    .Filter {
+        margin-top: -20px;
+    }
+
     .Flexcolumn {
         float: left;
         width: 75%;
     }
-    
+
     #gallery {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
     }
-    
+
     .phoneprice {
         height: auto;
         padding-bottom: 40px;
+        background-color: #fff;
+        padding: 5px;
+        margin: 5px;
+        width: 235px;
+        border-radius: 2px;
+        box-shadow: 0px 0px 5px 0px rgb(161 163 164);
     }
-    
+
     .product-info {
         margin-top: auto;
     }
-    
+
     .ratingbutton {
         background-color: green;
         color: white;
         border: white;
     }
-    
+
     #div1 {
         border: 1px solid lightgray;
         margin-bottom: 10px;
+        padding: 10px;
     }
-    
+
     .slidecontainer {
         width: 100%;
     }
-    
+
     .slider {
         -webkit-appearance: none;
         width: 100%;
@@ -268,11 +177,11 @@
         -webkit-transition: .2s;
         transition: opacity .2s;
     }
-    
+
     .slider:hover {
         opacity: 1;
     }
-    
+
     .slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
@@ -281,40 +190,40 @@
         background: #04AA6D;
         cursor: pointer;
     }
-    
+
     .slider::-moz-range-thumb {
         width: 25px;
         height: 25px;
         background: #04AA6D;
         cursor: pointer;
     }
-    
+
     .rangeslider {
         width: 264px;
     }
-    
+
     .minprice {
         float: left;
         width: 50%;
         padding: 10px;
     }
-    
+
     .maxprice {
         float: left;
         width: 50%;
         padding: 10px;
     }
-    
+
     #price {
         margin-bottom: 65px;
         font-size: 14px
     }
-    
+
     #accordion {
         font-size: 14px !important;
         line-height: 28px;
     }
-    
+
     #myBtn {
         display: none;
         position: fixed;
@@ -330,20 +239,18 @@
         padding: 15px;
         border-radius: 4px;
     }
-    
+
     #myBtn:hover {
         background-color: #555;
     }
+
     /* pagination css */
-    
+
     [data-pagination] {
         background-color: #ececec;
     }
-    
-    [data-pagination],
-    [data-pagination] *,
-    [data-pagination] *:before,
-    [data-pagination] *:after {
+
+    [data-pagination], [data-pagination] *, [data-pagination] *:before, [data-pagination] *:after {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -352,7 +259,7 @@
         -moz-osx-font-smoothing: grayscale;
         font-kerning: auto;
     }
-    
+
     [data-pagination] {
         font-size: 8pt;
         line-height: 1;
@@ -362,7 +269,7 @@
         text-align: center;
         transition: font-size .2s ease-in-out;
     }
-    
+
     [data-pagination] ul {
         list-style-type: none;
         display: inline;
@@ -370,61 +277,80 @@
         margin: 0;
         padding: .5em;
     }
-    
+
     [data-pagination] ul li {
         display: inline-block;
         font-size: 100%;
         width: auto;
         border-radius: 3px;
     }
-    
+
     [data-pagination]>a {
         font-size: 140%;
     }
-    
+
     [data-pagination] a {
         color: #777;
         font-size: 100%;
         padding: .5em;
     }
-    
-    [data-pagination] a:focus,
-    [data-pagination] a:hover {
+
+    [data-pagination] a:focus, [data-pagination] a:hover {
         color: #1f2833
     }
-    
+
     [data-pagination] li.current {
         background: rgba(0, 0, 0, .1)
     }
+
     /* Disabled & Hidden Styles */
-    
-    [data-pagination] .disabled,
-    [data-pagination] [hidden],
-    [data-pagination] [disabled] {
+
+    [data-pagination] .disabled, [data-pagination] [hidden], [data-pagination] [disabled] {
         opacity: .5;
         pointer-events: none;
     }
-    
+
     @media (min-width: 350px) {
         [data-pagination] {
             font-size: 10pt;
         }
     }
-    
+
     @media (min-width: 500px) {
         [data-pagination] {
             font-size: 12pt;
         }
     }
-    
+
     @media (min-width: 700px) {
         [data-pagination] {
             font-size: 14pt;
         }
     }
-    
+
     @media (min-width: 900px) {
         [data-pagination] {
             font-size: 16pt;
+        }
+    }
+
+
+    @media (max-width:768px) { 
+        .Filtercolumn {
+            width: 100%;
+        }
+        .Flexcolumn {
+            width: 100%;
+        }
+
+        .phoneprice {
+            width: 85%;
+            text-align: center;
+        }
+
+        .dropbtn {
+            position: relative;
+            top: 20px;
+            right: 15px;
         }
     }

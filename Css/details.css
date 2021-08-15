@@ -3,16 +3,18 @@
   width: 93%;
   margin-left: auto;
   margin-right: auto;
-  min-width: 1251px;
+  min-width: 768px;
   max-width: 1483px;
   margin-top: 45px;
 }
 
 #details .productGallery {
-  grid-column: 1 / 2;
   position: fixed;
-  top: 180px;
+  top: 32%;
   width: 30%;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 2px;
 }
 
 #details .productDetails {
@@ -38,7 +40,7 @@
   flex-direction: column;
   overflow-y: auto;
   margin: 0;
-  max-height: 65vh;
+  max-height: 55vh;
 }
 
 .thumbnails li {
@@ -91,6 +93,7 @@
   margin: 5px 0;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .BreadCrumbs {
@@ -114,7 +117,7 @@
 #productPreview {
   width: 68%;
   text-align: center;
-  max-height: 65vh;
+  max-height: 55vh;
 }
 
 .PhonestaBadge {
@@ -122,7 +125,7 @@
   padding: 4px;
   margin: 5px 0;
   display: block;
-  width: 10%;
+  width: 100px;
   text-align: center;
   color: #fff;
   border-radius: 4px;
@@ -525,8 +528,12 @@
   display: inherit !important;
 }
 
+.hamburger.details {
+  margin-top: 19px;
+}
+
 /* Media Queries Starts Here */
-@media only screen and (max-width: 1250px) {
+@media (max-width: 768px) {
   .mobile {
     display: inherit !important;
   }
