@@ -1,0 +1,72 @@
+###############################################################################################
+Sanjana
+8752142
+Pages Done: Home Page and EMI Plans Page
+###############################################################################################
+
+Below, there are commit ID's of all the changes done with one liner description
+
+###############################################################################################
+
+commit 9add31a9b781ace2974a21b11f59ddfa32bb1a1e
+Author: learn-design-repeat <sanjanaprameela@gmail.com>
+Date:   Sun Aug 15 18:34:57 2021 +0530
+
+    Sanjana - Final Commit --> Final cosmetics and CSS changes for alignment
+###############################################################################################
+
+commit cdbdb1e237eb973584f12f9695338cdff235b928
+Author: learn-design-repeat <sanjanaprameela@gmail.com>
+Date:   Fri Aug 13 16:41:05 2021 +0530
+
+    cosmetic changes1  --> Overall Cosmetic changes after group review
+###############################################################################################
+
+commit 4a46c7fcd40934e63ffa15c758e00ca6fe5d9d78
+Author: learn-design-repeat <sanjanaprameela@gmail.com>
+Date:   Wed Aug 11 15:42:32 2021 +0530
+
+    Bug fix for responsive view --> Responsive view update
+###############################################################################################
+
+commit 25f684c0d368dca4e1e580811116b42c3287cfad
+Author: learn-design-repeat <sanjanaprameela@gmail.com>
+Date:   Tue Aug 10 13:08:01 2021 +0530
+
+    Aug 10: Final Draft 1 --> Finished all the mentioned modules discussed in Lo-Fi discussion
+###############################################################################################
+
+commit 4c0c2a898ef3ba9da10154d15e070b90589171fa
+Author: learn-design-repeat <sanjanaprameela@gmail.com>
+Date:   Mon Aug 9 19:56:36 2021 +0530
+
+    Aug 9: Update on the picture set --> Responsive design update for picture- offer banner
+###############################################################################################
+
+commit fcceb1f15be98283cc992c38bb951f55bc0681dc
+Author: learn-design-repeat <sanjanaprameela@gmail.com>
+Date:   Fri Aug 6 15:13:04 2021 +0530
+
+    Home and EMI page Update 
+###############################################################################################
+
+commit cb4e71eac294d3bbc9d1f361546e8ad1f1bc3d9f
+Author: learn-design-repeat <sanjanaprameela@gmail.com>
+Date:   Wed Aug 4 16:04:28 2021 +0530
+
+    EMI Page Aug4 Draft1
+###############################################################################################
+
+commit c4836b314e69d1b59bd84f0bfd4252418871cebc
+Author: learn-design-repeat <sanjanaprameela@gmail.com>
+Date:   Tue Aug 3 21:59:10 2021 +0530
+
+    Home Page Aug3
+###############################################################################################
+
+commit 0788f3a30d54a283e9ea0c1f000562d10a95e046
+Author: learn-design-repeat <sanjanaprameela@gmail.com>
+Date:   Tue Aug 3 14:13:58 2021 +0530
+
+    Header and Footer Draft1 Aug3 --> Common Header and Footer design for all Pages
+###############################################################################################

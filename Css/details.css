@@ -327,11 +327,11 @@
   padding: 10px 0;
 }
 
-.specs>dt {
+.specs> .specs_label {
   width: 25%;
 }
 
-.specs>dd {
+.specs> .specs_info {
   width: 70%;
 }
 

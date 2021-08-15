@@ -1,0 +1,27 @@
+July 31: Checkpoint
+===============
+Roles:
+———
+Project Manager :  Ishwarya Vijaykrishnan 
+Graphic Designer: Sanjana Surendran
+Web developer: Ashwin Kumar Davley Suresh Rao
+
+Schedule:
+—————
+July 27: Group Discussion: Site type/name/layout/colors
+
+July 28: Lo-Fi Draft discussion
+
+July 31: Assigning pages to member and finalization of Lo-Fi
+
+Aug 1/2: Create common outline for all pages and share the common css with responsiveness.
+
+Aug 4: Individual updates - Draft 1
+
+Aug 6: Individual update - Draft 2
+
+Aug 8: Individual updates - Draft 3
+
+Aug 10: Completion of individual final draft
+
+Aug 11 -12: Final Review 

@@ -244,6 +244,11 @@
         background-color: #555;
     }
 
+    .phoneprice > img {
+        margin: 0 auto;
+        display: block;
+    }
+
     /* pagination css */
 
     [data-pagination] {
@@ -344,13 +349,17 @@
         }
 
         .phoneprice {
-            width: 85%;
-            text-align: center;
+            width: 255px;
+            text-align: center;  
         }
 
         .dropbtn {
             position: relative;
             top: 20px;
             right: 15px;
+        }
+
+        .phoneprice > img {
+            width: 100%;
         }
     }

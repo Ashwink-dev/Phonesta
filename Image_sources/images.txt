@@ -1,0 +1,11 @@
+Images:
+======
+SlideShow:
+Slider1 - www.poco.com
+Slider2 - www.redmi.com
+Slider3 - www.flipkart.com
+Slider4 - www.realme.com
+
+Banner: www.oneplus.com
+Hotsellers: www.flipkart.com
+Accessories: www.tatacliq.com
